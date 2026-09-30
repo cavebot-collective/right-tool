@@ -114,6 +114,386 @@
       "default_boundaries": [
         "file-cli"
       ]
+    },
+    {
+      "id": "apache-lucene",
+      "name": "Apache Lucene",
+      "category": "library",
+      "description": "Embedded full-text search/indexing library with mature analyzers, ranking, faceting, query machinery, and vector search.",
+      "homepage": "https://lucene.apache.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Apache-2.0"
+      },
+      "default_boundaries": [
+        "library-ffi",
+        "process-rpc"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "category": "executable",
+      "description": "Media probing, demuxing, transcoding, filtering, streaming, and codec orchestration across a very broad format surface.",
+      "homepage": "https://ffmpeg.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "LGPL/GPL depending on build",
+        "notes": "Deployment obligations depend on enabled components and build configuration."
+      },
+      "default_boundaries": [
+        "file-cli",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "gdal",
+      "name": "GDAL",
+      "category": "library",
+      "description": "Geospatial raster/vector format access, coordinate transformation, reprojection, and conversion infrastructure.",
+      "homepage": "https://gdal.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT-style"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "category": "dsl",
+      "description": "Compact functional query and transformation language specialized for JSON streams and structured pipeline surgery.",
+      "homepage": "https://jqlang.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "file-cli"
+      ]
+    },
+    {
+      "id": "opa-rego",
+      "name": "OPA / Rego",
+      "aliases": [
+        "Open Policy Agent",
+        "Rego"
+      ],
+      "category": "dsl",
+      "description": "Policy-as-code engine for evaluating shared declarative policy over arbitrary structured input.",
+      "homepage": "https://www.openpolicyagent.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Apache-2.0"
+      },
+      "default_boundaries": [
+        "process-rpc",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "racket-redex",
+      "name": "Racket / Redex",
+      "aliases": [
+        "Redex"
+      ],
+      "category": "library",
+      "description": "Executable operational-semantics framework for defining, reducing, testing, and exploring programming-language models.",
+      "homepage": "https://redex.racket-lang.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Racket licensing"
+      },
+      "default_boundaries": [
+        "spec-artifact",
+        "subsystem-language"
+      ]
+    },
+    {
+      "id": "z3",
+      "name": "Z3",
+      "category": "solver",
+      "description": "General SMT solver covering combinations of Boolean, arithmetic, bit-vector, array, datatype, and uninterpreted-function theories.",
+      "homepage": "https://github.com/Z3Prover/z3",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "process-rpc",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "cvc5",
+      "name": "cvc5",
+      "category": "solver",
+      "description": "General SMT theorem prover with broad theory support and value as an independent solver/reference implementation.",
+      "homepage": "https://cvc5.github.io/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "BSD-3-Clause"
+      },
+      "default_boundaries": [
+        "process-rpc",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "minizinc",
+      "name": "MiniZinc",
+      "category": "dsl",
+      "description": "Solver-independent high-level constraint modeling language for scheduling, allocation, finite-domain, and optimization problems.",
+      "homepage": "https://www.minizinc.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MPL-2.0"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "spec-artifact"
+      ]
+    },
+    {
+      "id": "clingo",
+      "name": "clingo",
+      "aliases": [
+        "Answer Set Programming",
+        "ASP"
+      ],
+      "category": "solver",
+      "description": "Grounder and solver for answer-set programming, suited to combinatorial world construction with defaults and exceptions.",
+      "homepage": "https://potassco.org/clingo/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "process-rpc"
+      ]
+    },
+    {
+      "id": "swi-prolog",
+      "name": "SWI-Prolog",
+      "category": "language",
+      "description": "Mature Prolog system with constraint libraries for goal-directed relational search and partially instantiated terms.",
+      "homepage": "https://www.swi-prolog.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "BSD-2-Clause"
+      },
+      "default_boundaries": [
+        "process-rpc",
+        "subsystem-language"
+      ]
+    },
+    {
+      "id": "tla-plus",
+      "name": "TLA+ / PlusCal / TLC",
+      "aliases": [
+        "TLA+",
+        "PlusCal",
+        "TLC"
+      ],
+      "category": "model-checker",
+      "description": "Specification and model-checking ecosystem for concurrent and distributed state-transition systems.",
+      "homepage": "https://lamport.azurewebsites.net/tla/tla.html",
+      "maturity": {
+        "status": "stable",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT/BSD-style ecosystem licensing"
+      },
+      "default_boundaries": [
+        "spec-artifact"
+      ]
+    },
+    {
+      "id": "alloy",
+      "name": "Alloy",
+      "category": "model-checker",
+      "description": "Relational modeling language and bounded model finder for structural invariants, graphs, ownership, cardinality, and counterexamples.",
+      "homepage": "https://alloytools.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "spec-artifact"
+      ]
+    },
+    {
+      "id": "dafny",
+      "name": "Dafny",
+      "category": "language",
+      "description": "Verification-aware programming language with contracts, invariants, automated proofs, and compilation to mainstream target languages.",
+      "homepage": "https://dafny.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "subsystem-language",
+        "generated-artifact"
+      ]
+    },
+    {
+      "id": "lean",
+      "name": "Lean 4",
+      "aliases": [
+        "Lean"
+      ],
+      "category": "prover",
+      "description": "Interactive theorem prover and functional language for machine-checked mathematics and software proofs.",
+      "homepage": "https://lean-lang.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Apache-2.0"
+      },
+      "default_boundaries": [
+        "spec-artifact",
+        "subsystem-language"
+      ]
+    },
+    {
+      "id": "julia-sciml",
+      "name": "Julia / SciML / Symbolics",
+      "aliases": [
+        "Julia",
+        "SciML",
+        "Symbolics.jl"
+      ],
+      "category": "platform",
+      "description": "Composable numerical and symbolic ecosystem where generic mathematical types can flow through solvers, AD, optimization, and generated numerical code.",
+      "homepage": "https://sciml.ai/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT ecosystem"
+      },
+      "default_boundaries": [
+        "subsystem-language",
+        "process-rpc"
+      ]
+    },
+    {
+      "id": "wolfram-engine",
+      "name": "Wolfram Engine",
+      "category": "runtime",
+      "description": "Broad exact and symbolic computation engine suitable as an independently implemented mathematical oracle.",
+      "homepage": "https://www.wolfram.com/engine/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Proprietary",
+        "notes": "Free Engine has development/pre-production restrictions; production classification requires license review."
+      },
+      "default_boundaries": [
+        "process-rpc"
+      ]
+    },
+    {
+      "id": "nix",
+      "name": "Nix",
+      "category": "toolchain",
+      "description": "Reproducible package/build/environment system that models dependency closures explicitly.",
+      "homepage": "https://nixos.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "LGPL-2.1"
+      },
+      "default_boundaries": [
+        "spec-artifact",
+        "whole-project"
+      ]
+    },
+    {
+      "id": "lua",
+      "name": "Lua",
+      "category": "language",
+      "description": "Small embeddable scripting language with a deliberately simple host API and low runtime footprint.",
+      "homepage": "https://www.lua.org/",
+      "maturity": {
+        "status": "stable",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "embedded-runtime"
+      ]
+    },
+    {
+      "id": "verilator",
+      "name": "Verilator",
+      "category": "compiler",
+      "description": "Compiles synthesizable Verilog/SystemVerilog into fast native C++/SystemC models for executable simulation and software-style testing.",
+      "homepage": "https://verilator.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "LGPL-3.0-or-later / Artistic-2.0"
+      },
+      "default_boundaries": [
+        "generated-artifact"
+      ]
     }
   ],
   "triggers": [
@@ -260,6 +640,457 @@
         "html",
         "epub",
         "convert"
+      ]
+    },
+    {
+      "id": "search.embedded-fulltext",
+      "family": "search",
+      "smell": "I am building a serious local search engine inside an application.",
+      "description": "The application needs embedded indexing, analyzers, ranking, faceting, rich queries, or vector search without operating a separate search server.",
+      "positive_signals": [
+        "in-process index",
+        "custom analyzers",
+        "faceting",
+        "advanced query parsing",
+        "vector retrieval"
+      ],
+      "negative_signals": [
+        "simple exact lookup is sufficient",
+        "an external search service is already operationally preferred"
+      ],
+      "keywords": [
+        "search",
+        "index",
+        "full text",
+        "facets",
+        "lucene"
+      ]
+    },
+    {
+      "id": "media.transcode-filter",
+      "family": "media",
+      "smell": "I am starting to write codec/container/transcoding glue.",
+      "description": "The workload requires probing, converting, filtering, muxing, streaming, or combining diverse audio/video formats.",
+      "positive_signals": [
+        "many codecs",
+        "container conversion",
+        "filter graphs",
+        "ffprobe-style metadata",
+        "streaming"
+      ],
+      "negative_signals": [
+        "only one trivial codec path is needed",
+        "a platform-native API already completely owns the requirement"
+      ],
+      "keywords": [
+        "video",
+        "audio",
+        "codec",
+        "transcode",
+        "ffmpeg",
+        "mux"
+      ]
+    },
+    {
+      "id": "geo.format-reproject",
+      "family": "geospatial",
+      "smell": "I am writing geospatial format and coordinate-system plumbing.",
+      "description": "Raster/vector ingestion, reprojection, coordinate transforms, or conversion across geospatial formats dominates the task.",
+      "positive_signals": [
+        "raster",
+        "vector",
+        "CRS",
+        "reprojection",
+        "GeoTIFF",
+        "Shapefile"
+      ],
+      "negative_signals": [
+        "the data has no geospatial coordinate semantics"
+      ],
+      "keywords": [
+        "gdal",
+        "gis",
+        "crs",
+        "reproject",
+        "raster",
+        "vector"
+      ]
+    },
+    {
+      "id": "data.json-pipeline",
+      "family": "data-transformation",
+      "smell": "I need a small program just to reshape JSON in a pipeline.",
+      "description": "The task is primarily selection, projection, filtering, grouping, or transformation of JSON streams.",
+      "positive_signals": [
+        "stdin/stdout",
+        "JSON stream",
+        "pipeline glue",
+        "projection",
+        "filtering"
+      ],
+      "negative_signals": [
+        "the transformation needs substantial application state or domain logic"
+      ],
+      "keywords": [
+        "json",
+        "jq",
+        "pipeline",
+        "transform",
+        "filter"
+      ]
+    },
+    {
+      "id": "policy.shared-enforcement",
+      "family": "policy",
+      "smell": "The same policy logic is being reimplemented at several enforcement points.",
+      "description": "Heterogeneous systems need a shared declarative decision engine over structured input.",
+      "positive_signals": [
+        "authorization rules",
+        "admission policy",
+        "multiple services",
+        "policy bundles",
+        "auditable decisions"
+      ],
+      "negative_signals": [
+        "the rule is local and trivial",
+        "policy is inseparable from one application's domain workflow"
+      ],
+      "keywords": [
+        "policy",
+        "rego",
+        "opa",
+        "authorization",
+        "admission"
+      ]
+    },
+    {
+      "id": "pl.executable-semantics",
+      "family": "programming-languages",
+      "smell": "I am writing a programming-language semantics on paper and a separate interpreter to test it.",
+      "description": "The artifact is an operational semantics, calculus, reduction system, or language model that should itself be executable and testable.",
+      "positive_signals": [
+        "reduction rules",
+        "evaluation contexts",
+        "metafunctions",
+        "language semantics",
+        "generated terms"
+      ],
+      "negative_signals": [
+        "the goal is ordinary parsing or production compiler construction"
+      ],
+      "keywords": [
+        "redex",
+        "semantics",
+        "calculus",
+        "reduction",
+        "racket"
+      ]
+    },
+    {
+      "id": "constraints.smt-theories",
+      "family": "constraints",
+      "smell": "I am hand-writing search over arithmetic, bit-vectors, arrays, or logical constraints.",
+      "description": "The core problem maps to SMT theories rather than custom enumeration.",
+      "positive_signals": [
+        "bit-vectors",
+        "integer or real arithmetic",
+        "arrays",
+        "uninterpreted functions",
+        "satisfiability"
+      ],
+      "negative_signals": [
+        "domain structure is better expressed as CP scheduling or nonmonotonic rules"
+      ],
+      "keywords": [
+        "smt",
+        "sat",
+        "z3",
+        "cvc5",
+        "constraints"
+      ]
+    },
+    {
+      "id": "constraints.solver-independent-cp",
+      "family": "constraints",
+      "smell": "I want to model scheduling/allocation constraints without committing to one solver API.",
+      "description": "The problem is naturally a high-level constraint-programming or optimization model and solver interchangeability matters.",
+      "positive_signals": [
+        "scheduling",
+        "allocation",
+        "finite domains",
+        "objective function",
+        "global constraints"
+      ],
+      "negative_signals": [
+        "low-level SMT theories are the natural representation",
+        "solver-specific features dominate"
+      ],
+      "keywords": [
+        "minizinc",
+        "constraint programming",
+        "schedule",
+        "allocate",
+        "optimize"
+      ]
+    },
+    {
+      "id": "constraints.answer-set-worlds",
+      "family": "constraints",
+      "smell": "I am generating candidate worlds under defaults, exclusions, and combinatorial rules.",
+      "description": "The problem is nonmonotonic combinatorial knowledge representation with admissible-model search.",
+      "positive_signals": [
+        "defaults and exceptions",
+        "stable models",
+        "combinatorial choices",
+        "knowledge representation"
+      ],
+      "negative_signals": [
+        "the problem is straightforward monotone relational closure",
+        "numeric optimization dominates"
+      ],
+      "keywords": [
+        "clingo",
+        "asp",
+        "answer set",
+        "defaults",
+        "stable model"
+      ]
+    },
+    {
+      "id": "constraints.relational-partial-terms",
+      "family": "constraints",
+      "smell": "I keep writing recursive search where arguments may be known in either direction.",
+      "description": "The computation is goal-directed relational search over partially instantiated terms, optionally with finite-domain constraints.",
+      "positive_signals": [
+        "bidirectional relations",
+        "unification",
+        "backtracking",
+        "CLP(FD)",
+        "partially known values"
+      ],
+      "negative_signals": [
+        "the workload is a large monotone whole-program fixed point",
+        "deterministic imperative flow is simpler"
+      ],
+      "keywords": [
+        "prolog",
+        "clp",
+        "unification",
+        "backtracking",
+        "relations"
+      ]
+    },
+    {
+      "id": "verification.concurrent-behavior",
+      "family": "verification",
+      "smell": "The bug I fear is some legal interleaving of retries, messages, failover, or concurrent steps.",
+      "description": "Correctness depends on state transitions and behaviors across nondeterministic concurrent or distributed executions.",
+      "positive_signals": [
+        "interleavings",
+        "retries",
+        "leader election",
+        "message duplication",
+        "liveness",
+        "fairness"
+      ],
+      "negative_signals": [
+        "the concern is purely structural rather than behavioral",
+        "the implementation/spec correspondence cannot be meaningfully modeled"
+      ],
+      "keywords": [
+        "tla+",
+        "pluscal",
+        "concurrency",
+        "distributed",
+        "model check"
+      ]
+    },
+    {
+      "id": "verification.relational-counterexample",
+      "family": "verification",
+      "smell": "I want a tiny concrete counterexample to a structural invariant.",
+      "description": "The model is primarily finite sets, relations, graphs, ownership, and cardinality constraints.",
+      "positive_signals": [
+        "relations",
+        "bounded scope",
+        "graph structure",
+        "ownership",
+        "cardinality"
+      ],
+      "negative_signals": [
+        "unbounded proof is required",
+        "behavioral traces and temporal properties dominate"
+      ],
+      "keywords": [
+        "alloy",
+        "relational",
+        "counterexample",
+        "bounded model"
+      ]
+    },
+    {
+      "id": "verification.code-contracts",
+      "family": "verification",
+      "smell": "The proof obligation belongs directly beside executable implementation code.",
+      "description": "Critical code needs contracts, loop invariants, representation invariants, and automated deductive verification.",
+      "positive_signals": [
+        "preconditions",
+        "postconditions",
+        "loop invariants",
+        "verified algorithms",
+        "compiled output"
+      ],
+      "negative_signals": [
+        "the problem is better modeled separately as a protocol",
+        "interactive theorem proving is required"
+      ],
+      "keywords": [
+        "dafny",
+        "contracts",
+        "invariants",
+        "verification"
+      ]
+    },
+    {
+      "id": "verification.machine-proof",
+      "family": "verification",
+      "smell": "Testing or bounded search is insufficient; I need a machine-checked proof.",
+      "description": "A mathematical or program proposition must be discharged by an interactive prover and trusted kernel.",
+      "positive_signals": [
+        "formal theorem",
+        "proof term",
+        "trusted kernel",
+        "mathematical formalization"
+      ],
+      "negative_signals": [
+        "bounded model finding or SMT automation fully answers the real question",
+        "formalization cost outweighs the required assurance"
+      ],
+      "keywords": [
+        "lean",
+        "proof",
+        "theorem",
+        "formalization"
+      ]
+    },
+    {
+      "id": "numerics.compositional-math-types",
+      "family": "numerics",
+      "smell": "My custom mathematical objects keep falling out of the numerical stack.",
+      "description": "Unusual scalar/types must compose through solvers, automatic differentiation, optimization, symbolic transforms, or generated code.",
+      "positive_signals": [
+        "dual numbers",
+        "units",
+        "arbitrary precision",
+        "symbolic values",
+        "ODE solving",
+        "AD"
+      ],
+      "negative_signals": [
+        "the job is ordinary tabular analysis or standard dense linear algebra"
+      ],
+      "keywords": [
+        "julia",
+        "sciml",
+        "symbolics",
+        "ad",
+        "ode",
+        "numerics"
+      ]
+    },
+    {
+      "id": "math.symbolic-exact-oracle",
+      "family": "mathematics",
+      "smell": "I need an independently implemented exact/symbolic mathematical oracle.",
+      "description": "The task needs broad symbolic manipulation, exact computation, equation solving, transforms, or differential-test reference answers.",
+      "positive_signals": [
+        "exact algebra",
+        "symbolic integration",
+        "equation solving",
+        "reference oracle",
+        "simplification"
+      ],
+      "negative_signals": [
+        "ordinary floating-point numerics are sufficient",
+        "production licensing cost dominates the value"
+      ],
+      "keywords": [
+        "wolfram",
+        "symbolic",
+        "exact",
+        "cas",
+        "oracle"
+      ]
+    },
+    {
+      "id": "build.reproducible-closure",
+      "family": "build",
+      "smell": "Environment and toolchain drift has become part of the bug surface.",
+      "description": "The project needs explicit, reproducible dependency/toolchain closures rather than best-effort environment setup.",
+      "positive_signals": [
+        "reproducible builds",
+        "hermetic-ish environments",
+        "toolchain pinning",
+        "dependency closure"
+      ],
+      "negative_signals": [
+        "a conventional lockfile/container already gives adequate reproducibility",
+        "team learning cost exceeds the drift problem"
+      ],
+      "keywords": [
+        "nix",
+        "reproducible",
+        "hermetic",
+        "environment",
+        "build"
+      ]
+    },
+    {
+      "id": "extensibility.embedded-scripting",
+      "family": "extensibility",
+      "smell": "My application needs a user/plugin scripting language and I am about to invent one.",
+      "description": "A host application needs a small embeddable extension language with straightforward native bindings.",
+      "positive_signals": [
+        "plugins",
+        "user scripts",
+        "embedded interpreter",
+        "host API",
+        "small runtime"
+      ],
+      "negative_signals": [
+        "users require the full Python/JavaScript ecosystem",
+        "no runtime scripting is actually needed"
+      ],
+      "keywords": [
+        "lua",
+        "embed",
+        "scripting",
+        "plugin",
+        "extension"
+      ]
+    },
+    {
+      "id": "hardware.executable-rtl",
+      "family": "hardware",
+      "smell": "I want software-style fast tests or fuzzing over Verilog/SystemVerilog RTL.",
+      "description": "RTL needs to become a fast native executable model for CI, differential testing, or large simulation workloads.",
+      "positive_signals": [
+        "SystemVerilog",
+        "native simulation",
+        "CI",
+        "fuzzing",
+        "differential testing"
+      ],
+      "negative_signals": [
+        "analog/mixed-signal behavior dominates",
+        "the required constructs are outside Verilator's supported simulation model"
+      ],
+      "keywords": [
+        "verilator",
+        "rtl",
+        "verilog",
+        "systemverilog",
+        "simulation"
       ]
     }
   ],
@@ -491,6 +1322,664 @@
         "research.language-override-atlas"
       ],
       "example": "Convert Markdown, reStructuredText, LaTeX, HTML, DOCX, or EPUB through one maintained conversion engine."
+    },
+    {
+      "id": "rec.lucene.embedded-fulltext",
+      "trigger_id": "search.embedded-fulltext",
+      "system_id": "apache-lucene",
+      "strength": "very-strong",
+      "advantage": "Provides a mature embedded search engine without requiring a separate search service or rebuilding indexing/ranking/query infrastructure.",
+      "avoid_when": [
+        "Search needs are limited to simple exact lookup or basic database FTS.",
+        "Operational requirements already favor a dedicated external search cluster."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "SQLite/PostgreSQL FTS",
+          "reason": "Prefer when search needs are modest and keeping the index inside the existing database is more valuable than Lucene's feature surface."
+        }
+      ],
+      "boundary": {
+        "kind": "library-ffi",
+        "interface": "JVM library or thin local service"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Add local faceted full-text and vector search over a corpus without operating Elasticsearch/OpenSearch."
+    },
+    {
+      "id": "rec.ffmpeg.media",
+      "trigger_id": "media.transcode-filter",
+      "system_id": "ffmpeg",
+      "strength": "extremely-strong",
+      "advantage": "Deletes broad codec/container/filtering integration by concentrating decades of media interoperability behind a CLI/library surface.",
+      "avoid_when": [
+        "A single platform-native media API completely owns the narrow requirement.",
+        "Licensing obligations of the selected FFmpeg build are incompatible with deployment."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "platform media APIs",
+          "reason": "Prefer for narrow platform-specific capture/playback workflows where cross-format breadth is unnecessary."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "ffprobe/ffmpeg subprocess"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "variable",
+        "notes": "Build configuration changes licensing obligations."
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Probe, transcode, trim, resample, filter, and remux heterogeneous audio/video without integrating individual codecs."
+    },
+    {
+      "id": "rec.gdal.geo",
+      "trigger_id": "geo.format-reproject",
+      "system_id": "gdal",
+      "strength": "extremely-strong",
+      "advantage": "Owns a vast portion of geospatial format and coordinate-system plumbing that is expensive and error-prone to recreate.",
+      "avoid_when": [
+        "The data has no geospatial coordinate semantics.",
+        "The task is a narrow operation fully supported by an existing host GIS API."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "host-language GIS libraries",
+          "reason": "Often wrap GDAL or are preferable when only a narrow high-level operation is required."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "gdal* CLI first; bindings when repeated in-process calls justify them"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Reproject and convert mixed raster/vector datasets across CRS and file formats without implementing geodesy/format adapters."
+    },
+    {
+      "id": "rec.jq.json",
+      "trigger_id": "data.json-pipeline",
+      "system_id": "jq",
+      "strength": "strong",
+      "advantage": "The representation matches the problem directly and crossing cost is effectively zero in pipeline-oriented JSON work.",
+      "avoid_when": [
+        "The transformation needs substantial application state, I/O orchestration, or domain behavior.",
+        "The team cannot accept a separate command-line dependency."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "host-language JSON code",
+          "reason": "Prefer when transformation is embedded in larger domain logic rather than a standalone structured-data step."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "stdin/stdout"
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Select, reshape, group, and join JSON emitted by another command without creating a throwaway application."
+    },
+    {
+      "id": "rec.opa.shared-policy",
+      "trigger_id": "policy.shared-enforcement",
+      "system_id": "opa-rego",
+      "strength": "very-strong",
+      "advantage": "Centralizes declarative policy semantics across heterogeneous enforcement points instead of duplicating policy code per service.",
+      "avoid_when": [
+        "The policy is tiny, local, and inseparable from one application's workflow.",
+        "An existing platform policy engine already owns all enforcement points."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "application-native authorization code",
+          "reason": "Prefer when the policy surface is local and no cross-system consistency problem exists."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "local OPA process/REST or embedded evaluator"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "medium",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Apply the same admission/authorization policy to services written in several different implementation languages."
+    },
+    {
+      "id": "rec.redex.semantics",
+      "trigger_id": "pl.executable-semantics",
+      "system_id": "racket-redex",
+      "strength": "extremely-strong",
+      "advantage": "Makes the formal operational semantics itself executable, testable, and generative rather than maintaining a paper model plus a separate interpreter.",
+      "avoid_when": [
+        "The goal is production compiler implementation rather than semantic modeling.",
+        "Only parsing or AST manipulation is needed."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "handwritten reference interpreter",
+          "reason": "May be preferable when the semantics are already simple and the formal model is not itself a deliverable."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": "standalone Racket/Redex model and test suite"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Define a reduction calculus, evaluation contexts, and metafunctions and generate/test terms directly from that semantics."
+    },
+    {
+      "id": "rec.z3.smt",
+      "trigger_id": "constraints.smt-theories",
+      "system_id": "z3",
+      "strength": "very-strong",
+      "advantage": "Replaces custom logical search with mature SMT theory reasoning and propagation across mixed Boolean/arithmetic/bit-vector structures.",
+      "avoid_when": [
+        "Constraint programming globals/scheduling are the natural abstraction.",
+        "The problem is primarily nonmonotonic defaults/exceptions."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "cvc5",
+          "name": "cvc5",
+          "reason": "Use as an independent oracle or where its theory/proof capabilities better fit the workload."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "SMT-LIB process or host API"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Solve bit-vector and array constraints for a protocol or symbolic execution subproblem instead of writing bespoke enumeration."
+    },
+    {
+      "id": "rec.cvc5.smt",
+      "trigger_id": "constraints.smt-theories",
+      "system_id": "cvc5",
+      "strength": "strong",
+      "advantage": "Offers an independent modern SMT implementation with broad theory support, useful both as a primary solver and as a cross-checking oracle.",
+      "avoid_when": [
+        "Z3 already satisfies the workload and independent validation has no value.",
+        "The problem maps more naturally to CP or ASP."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "z3",
+          "name": "Z3",
+          "reason": "Often the default SMT choice because of its ecosystem and broad adoption."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "SMT-LIB process"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Differentially check SMT-dependent tooling against a second solver rather than trusting one implementation."
+    },
+    {
+      "id": "rec.minizinc.cp",
+      "trigger_id": "constraints.solver-independent-cp",
+      "system_id": "minizinc",
+      "strength": "very-strong",
+      "advantage": "Separates a high-level constraint model from solver choice, avoiding solver-specific imperative search code.",
+      "avoid_when": [
+        "Solver-specific APIs/features are the core requirement.",
+        "The problem maps directly to SMT theories with no benefit from CP globals."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "direct OR-Tools/solver API",
+          "reason": "Prefer when solver lock-in is acceptable and programmatic integration outweighs model portability."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": ".mzn model plus CLI/API"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Model scheduling/resource allocation once and compare multiple back-end solvers without rewriting the model."
+    },
+    {
+      "id": "rec.clingo.asp",
+      "trigger_id": "constraints.answer-set-worlds",
+      "system_id": "clingo",
+      "strength": "very-strong",
+      "advantage": "Represents combinatorial admissible-world search with defaults and exceptions directly, replacing hand-coded candidate generation/backtracking.",
+      "avoid_when": [
+        "The logic is monotone recursive closure better expressed as Datalog.",
+        "The task is primarily continuous/numeric optimization."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "swi-prolog",
+          "name": "SWI-Prolog",
+          "reason": "Prefer for goal-directed relational queries where query direction and partially instantiated terms matter."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "facts/rules in, stable models out; API when incremental solving is needed"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Choose a consistent set of actions/configurations under defaults, exclusions, and global combinatorial rules."
+    },
+    {
+      "id": "rec.prolog.relational",
+      "trigger_id": "constraints.relational-partial-terms",
+      "system_id": "swi-prolog",
+      "strength": "strong",
+      "advantage": "Turns recursive search and bidirectional relations into direct language semantics through unification, backtracking, and CLP libraries.",
+      "avoid_when": [
+        "The computation is a large monotone fixed point better suited to Datalog.",
+        "The relation is trivial enough that adding a runtime outweighs the modeling benefit."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "souffle",
+          "name": "Soufflé",
+          "reason": "Prefer for large bottom-up recursive relational analyses rather than goal-directed queries."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "separate Prolog process/Pengine or subsystem module"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Solve a relational puzzle or structural search where any argument may be unknown and constraints should propagate both directions."
+    },
+    {
+      "id": "rec.tla.concurrent",
+      "trigger_id": "verification.concurrent-behavior",
+      "system_id": "tla-plus",
+      "strength": "very-strong",
+      "advantage": "Explores nondeterministic state-machine behaviors before implementation details hide the concurrency structure, producing concrete counterexample traces.",
+      "avoid_when": [
+        "The main correctness question is static/structural rather than behavioral.",
+        "The model cannot be kept meaningfully aligned with the implementation."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "alloy",
+          "name": "Alloy",
+          "reason": "Prefer for bounded relational structure/counterexamples rather than temporal behaviors."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": ".tla/.cfg model checked in CI"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Explore retries, duplicate messages, failover, and leader transitions across all bounded interleavings."
+    },
+    {
+      "id": "rec.alloy.relational",
+      "trigger_id": "verification.relational-counterexample",
+      "system_id": "alloy",
+      "strength": "very-strong",
+      "advantage": "Expresses finite relational structure compactly and searches for small concrete counterexamples to invariants.",
+      "avoid_when": [
+        "Absence of a bounded counterexample must constitute an unbounded proof.",
+        "Temporal behavior rather than structure is the main concern."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "tla-plus",
+          "name": "TLA+",
+          "reason": "Prefer for transition-system behavior and temporal properties."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": "Alloy model plus analyzer/model finder"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Find a minimal ownership/membership graph that violates an apparently plausible schema invariant."
+    },
+    {
+      "id": "rec.dafny.contracts",
+      "trigger_id": "verification.code-contracts",
+      "system_id": "dafny",
+      "strength": "very-strong",
+      "advantage": "Keeps executable code and deductive contracts/invariants together, with automated verification and compilation to mainstream targets.",
+      "avoid_when": [
+        "A separate behavioral model answers the real question more cheaply.",
+        "The proof requires deep interactive mathematics beyond Dafny's intended workflow."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "lean",
+          "name": "Lean 4",
+          "reason": "Prefer when interactive theorem proving and mathematical formalization dominate over executable verified code."
+        }
+      ],
+      "boundary": {
+        "kind": "subsystem-language",
+        "interface": "verified critical module compiled/exported into the host system"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Implement a critical algorithm with pre/postconditions and loop invariants, then compile the verified component for use elsewhere."
+    },
+    {
+      "id": "rec.lean.proof",
+      "trigger_id": "verification.machine-proof",
+      "system_id": "lean",
+      "strength": "strong",
+      "advantage": "Provides a trusted-kernel machine-checked proof environment when tests, bounded search, and SMT are not sufficient evidence.",
+      "avoid_when": [
+        "The assurance requirement does not justify formalization cost.",
+        "The property is better handled automatically by SMT/model checking."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "Rocq / Isabelle",
+          "reason": "Proof-assistant choice depends heavily on libraries, logic, automation, and existing formal assets; no universal winner was established."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": "separate Lean proof project checked in CI"
+      },
+      "crossing_cost": {
+        "learning": "high",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Prove a mathematical property or algorithmic invariant that must survive independent kernel checking."
+    },
+    {
+      "id": "rec.julia.compositional-numerics",
+      "trigger_id": "numerics.compositional-math-types",
+      "system_id": "julia-sciml",
+      "strength": "very-strong",
+      "advantage": "Lets unusual mathematical representations participate generically across symbolic transforms, AD, solvers, optimization, and native specialization.",
+      "avoid_when": [
+        "The task is routine dataframe/scientific analysis already well-served by Python/R.",
+        "Only standard numeric kernels are needed and mature host libraries already dominate."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "Python SciPy/JAX ecosystem",
+          "reason": "Often preferable for standard scientific/ML workloads; the crossing case strengthens when custom mathematical types must compose end-to-end."
+        }
+      ],
+      "boundary": {
+        "kind": "subsystem-language",
+        "interface": "Julia numerical subsystem or worker process"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "medium",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Propagate units, dual numbers, arbitrary precision, or symbolic values through an ODE solver and optimization pipeline.",
+      "experiment_ids": [
+        "exp.julia-composition-bakeoff"
+      ]
+    },
+    {
+      "id": "rec.wolfram.symbolic",
+      "trigger_id": "math.symbolic-exact-oracle",
+      "system_id": "wolfram-engine",
+      "strength": "very-strong",
+      "advantage": "Supplies a very broad independently implemented CAS surface for exact/symbolic reference computation and differential testing.",
+      "avoid_when": [
+        "Open-source symbolic tooling already covers the required mathematics.",
+        "Production licensing or authentication constraints outweigh the coverage advantage."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "SymPy / Julia Symbolics",
+          "reason": "Prefer when their supported symbolic domain is sufficient and open deployment matters more than Wolfram breadth."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "wolframscript/local Wolfram Engine"
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "low",
+        "operational": "medium",
+        "licensing": "variable",
+        "notes": "Production and organizational-use classification requires explicit licensing care."
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Generate exact reference answers for differential/property tests of a numerical implementation."
+    },
+    {
+      "id": "rec.nix.reproducible",
+      "trigger_id": "build.reproducible-closure",
+      "system_id": "nix",
+      "strength": "strong",
+      "advantage": "Makes the dependency/toolchain closure explicit enough to reproduce complex environments rather than relying on ambient machine state.",
+      "avoid_when": [
+        "A lockfile plus container already provides adequate reproducibility.",
+        "The organization cannot justify Nix's substantial conceptual learning cost."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "containers + language lockfiles",
+          "reason": "Prefer when they already solve the actual reproducibility failures without introducing Nix's model."
+        }
+      ],
+      "boundary": {
+        "kind": "spec-artifact",
+        "interface": "nix develop/build wrapped around the existing project"
+      },
+      "crossing_cost": {
+        "learning": "high",
+        "integration": "medium",
+        "operational": "medium",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Pin compiler, native libraries, code generators, and tools into a reproducible development/build closure."
+    },
+    {
+      "id": "rec.lua.embedding",
+      "trigger_id": "extensibility.embedded-scripting",
+      "system_id": "lua",
+      "strength": "very-strong",
+      "advantage": "Provides a purpose-built small embeddable language/runtime instead of inventing a bespoke extension DSL or embedding a much heavier general runtime.",
+      "avoid_when": [
+        "Users specifically need the Python/JavaScript package ecosystem.",
+        "The application does not actually need runtime scripting."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "Python/V8 embedding",
+          "reason": "Prefer when ecosystem breadth and familiar user language outweigh embedding size and host-API simplicity."
+        }
+      ],
+      "boundary": {
+        "kind": "embedded-runtime",
+        "interface": "Lua VM embedded through C API/FFI"
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Expose host functions and domain objects to user scripts without creating and maintaining a custom expression language."
+    },
+    {
+      "id": "rec.verilator.rtl",
+      "trigger_id": "hardware.executable-rtl",
+      "system_id": "verilator",
+      "strength": "very-strong",
+      "advantage": "Turns RTL into fast native executable models, enabling ordinary software CI, fuzzing, and differential-test techniques over hardware designs.",
+      "avoid_when": [
+        "Analog/mixed-signal behavior dominates.",
+        "Required simulation semantics rely on constructs outside Verilator's intended model."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "event-driven HDL simulators",
+          "reason": "Prefer when full language simulation fidelity is more important than native compiled throughput."
+        }
+      ],
+      "boundary": {
+        "kind": "generated-artifact",
+        "interface": "generated C++/SystemC executable model"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Compile a SystemVerilog design into a native test target and subject it to property/fuzz/differential testing."
     }
   ],
   "experiments": [
@@ -533,6 +2022,20 @@
       ],
       "system_ids": [
         "cue"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "exp.julia-composition-bakeoff",
+      "title": "Compositional numerics torture test",
+      "hypothesis": "Julia/SciML materially reduces glue when unusual mathematical types must compose through AD, solving, and optimization.",
+      "success_criteria": [
+        "Custom mathematical type survives end-to-end without bespoke extension layers",
+        "Equivalent or better correctness",
+        "Integration complexity is materially lower"
+      ],
+      "system_ids": [
+        "julia-sciml"
       ],
       "status": "proposed"
     }
