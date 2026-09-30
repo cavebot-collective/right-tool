@@ -1,0 +1,465 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/cavebot-collective/right-tool/registry/schema/right-tool-registry.schema.json",
+  "title": "right-tool registry",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "systems",
+    "triggers",
+    "evidence",
+    "recommendations",
+    "experiments"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "systems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/system"
+      }
+    },
+    "triggers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/trigger"
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      }
+    },
+    "recommendations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recommendation"
+      }
+    },
+    "experiments": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/experiment"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "nonEmptyStrings": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "level": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "variable"
+      ]
+    },
+    "boundaryKind": {
+      "enum": [
+        "file-cli",
+        "process-rpc",
+        "library-ffi",
+        "embedded-runtime",
+        "spec-artifact",
+        "generated-artifact",
+        "subsystem-language",
+        "whole-project"
+      ]
+    },
+    "system": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "category",
+        "description",
+        "maturity",
+        "licensing"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "aliases": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "category": {
+          "enum": [
+            "language",
+            "dsl",
+            "solver",
+            "prover",
+            "model-checker",
+            "executable",
+            "library",
+            "runtime",
+            "compiler",
+            "database",
+            "toolchain",
+            "platform"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "homepage": {
+          "type": "string",
+          "format": "uri"
+        },
+        "maturity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "status",
+            "observed_on"
+          ],
+          "properties": {
+            "status": {
+              "enum": [
+                "active",
+                "stable",
+                "experimental",
+                "legacy",
+                "unknown"
+              ]
+            },
+            "observed_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "licensing": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "model"
+          ],
+          "properties": {
+            "model": {
+              "type": "string",
+              "minLength": 1
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "default_boundaries": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/boundaryKind"
+          }
+        }
+      }
+    },
+    "trigger": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "family",
+        "smell",
+        "description",
+        "positive_signals"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "family": {
+          "type": "string",
+          "minLength": 1
+        },
+        "smell": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "positive_signals": {
+          "$ref": "#/$defs/nonEmptyStrings"
+        },
+        "negative_signals": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "keywords": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "kind",
+        "title",
+        "source",
+        "observed_on"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "kind": {
+          "enum": [
+            "primary",
+            "practitioner",
+            "empirical",
+            "research"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1
+        },
+        "observed_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "alternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "reason"
+      ],
+      "properties": {
+        "system_id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "interface"
+      ],
+      "properties": {
+        "kind": {
+          "$ref": "#/$defs/boundaryKind"
+        },
+        "interface": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "crossingCost": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "learning",
+        "integration",
+        "operational",
+        "licensing"
+      ],
+      "properties": {
+        "learning": {
+          "$ref": "#/$defs/level"
+        },
+        "integration": {
+          "$ref": "#/$defs/level"
+        },
+        "operational": {
+          "$ref": "#/$defs/level"
+        },
+        "licensing": {
+          "$ref": "#/$defs/level"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "recommendation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "trigger_id",
+        "system_id",
+        "strength",
+        "advantage",
+        "avoid_when",
+        "closest_alternatives",
+        "boundary",
+        "crossing_cost",
+        "confidence",
+        "evidence_ids",
+        "example"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "trigger_id": {
+          "$ref": "#/$defs/id"
+        },
+        "system_id": {
+          "$ref": "#/$defs/id"
+        },
+        "strength": {
+          "enum": [
+            "candidate",
+            "strong",
+            "very-strong",
+            "extremely-strong"
+          ]
+        },
+        "advantage": {
+          "type": "string",
+          "minLength": 1
+        },
+        "avoid_when": {
+          "$ref": "#/$defs/nonEmptyStrings"
+        },
+        "closest_alternatives": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/alternative"
+          }
+        },
+        "boundary": {
+          "$ref": "#/$defs/boundary"
+        },
+        "crossing_cost": {
+          "$ref": "#/$defs/crossingCost"
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "evidence_ids": {
+          "$ref": "#/$defs/nonEmptyStrings"
+        },
+        "example": {
+          "type": "string",
+          "minLength": 1
+        },
+        "experiment_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        }
+      }
+    },
+    "experiment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "hypothesis",
+        "success_criteria",
+        "system_ids",
+        "status"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hypothesis": {
+          "type": "string",
+          "minLength": 1
+        },
+        "success_criteria": {
+          "$ref": "#/$defs/nonEmptyStrings"
+        },
+        "system_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "$ref": "#/$defs/id"
+          }
+        },
+        "status": {
+          "enum": [
+            "proposed",
+            "running",
+            "completed",
+            "rejected"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
