@@ -1,0 +1,540 @@
+{
+  "schema_version": "1.0.0",
+  "systems": [
+    {
+      "id": "apache-tika",
+      "name": "Apache Tika",
+      "category": "library",
+      "description": "Broad content detection and text/metadata extraction across heterogeneous document and binary formats.",
+      "homepage": "https://tika.apache.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Apache-2.0"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "process-rpc",
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "souffle",
+      "name": "Soufflé",
+      "aliases": [
+        "Soufflé Datalog"
+      ],
+      "category": "dsl",
+      "description": "Datalog system specialized for high-performance recursive relational and static-analysis workloads.",
+      "homepage": "https://souffle-lang.github.io/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "UPL-1.0"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "generated-artifact",
+        "subsystem-language"
+      ]
+    },
+    {
+      "id": "roslyn",
+      "name": "Roslyn",
+      "aliases": [
+        ".NET Compiler Platform"
+      ],
+      "category": "compiler",
+      "description": "Compiler APIs exposing C# and Visual Basic syntax, symbols, binding, semantic models, diagnostics, and code transformations.",
+      "homepage": "https://github.com/dotnet/roslyn",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "library-ffi",
+        "process-rpc"
+      ]
+    },
+    {
+      "id": "tree-sitter",
+      "name": "Tree-sitter",
+      "category": "library",
+      "description": "Incremental, error-tolerant concrete syntax parsing designed for source files that may be incomplete or changing.",
+      "homepage": "https://tree-sitter.github.io/tree-sitter/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "MIT"
+      },
+      "default_boundaries": [
+        "library-ffi"
+      ]
+    },
+    {
+      "id": "cue",
+      "name": "CUE",
+      "category": "dsl",
+      "description": "Constraint/unification language that combines configuration values, schemas, defaults, validation, and composition.",
+      "homepage": "https://cuelang.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "Apache-2.0"
+      },
+      "default_boundaries": [
+        "file-cli",
+        "subsystem-language"
+      ]
+    },
+    {
+      "id": "pandoc",
+      "name": "Pandoc",
+      "category": "executable",
+      "description": "Structured document conversion engine spanning many markup, publishing, and document formats.",
+      "homepage": "https://pandoc.org/",
+      "maturity": {
+        "status": "active",
+        "observed_on": "2026-09-25"
+      },
+      "licensing": {
+        "model": "GPL-2.0-or-later"
+      },
+      "default_boundaries": [
+        "file-cli"
+      ]
+    }
+  ],
+  "triggers": [
+    {
+      "id": "documents.heterogeneous-extraction",
+      "family": "documents",
+      "smell": "I am accumulating one parser per incoming file type.",
+      "description": "Unknown or mixed document/binary formats must be normalized into text and metadata.",
+      "positive_signals": [
+        "many MIME types",
+        "metadata normalization",
+        "archives and office formats",
+        "format coverage matters more than pixel-perfect layout"
+      ],
+      "negative_signals": [
+        "only one known format",
+        "exact visual layout reconstruction is the primary requirement"
+      ],
+      "keywords": [
+        "pdf",
+        "office",
+        "email",
+        "metadata",
+        "mime",
+        "extract"
+      ]
+    },
+    {
+      "id": "analysis.fixed-point-propagation",
+      "family": "analysis",
+      "smell": "I have a work queue that propagates facts until nothing changes.",
+      "description": "The core computation is monotone recursive relational propagation or transitive closure.",
+      "positive_signals": [
+        "visited sets",
+        "repeated propagation",
+        "recursive relations",
+        "dependency closure",
+        "taint or reachability"
+      ],
+      "negative_signals": [
+        "side effects and ordering dominate",
+        "the workload is primarily numerical"
+      ],
+      "keywords": [
+        "worklist",
+        "fixed point",
+        "reachability",
+        "taint",
+        "closure"
+      ]
+    },
+    {
+      "id": "code.csharp-semantics",
+      "family": "code-analysis",
+      "smell": "I need to know what C# code means, not merely how it parses.",
+      "description": "Analysis requires binding, overload resolution, symbols, inferred types, diagnostics, or compiler-faithful refactoring.",
+      "positive_signals": [
+        "symbol identity",
+        "overload resolution",
+        "semantic model",
+        "inferred types",
+        "compiler diagnostics"
+      ],
+      "negative_signals": [
+        "only concrete syntax structure is needed",
+        "the language is not C# or Visual Basic"
+      ],
+      "keywords": [
+        "c#",
+        "symbols",
+        "semantic model",
+        "refactor",
+        "binding"
+      ]
+    },
+    {
+      "id": "code.incremental-syntax",
+      "family": "code-analysis",
+      "smell": "I need syntax trees while source is incomplete, malformed, or changing interactively.",
+      "description": "The core need is incremental and error-tolerant concrete syntax across one or more programming languages.",
+      "positive_signals": [
+        "editor integration",
+        "incremental reparsing",
+        "incomplete code",
+        "many language grammars"
+      ],
+      "negative_signals": [
+        "compiler-faithful semantic binding is required"
+      ],
+      "keywords": [
+        "parser",
+        "incremental",
+        "editor",
+        "ast",
+        "syntax tree"
+      ]
+    },
+    {
+      "id": "config.schema-defaults-overlays",
+      "family": "configuration",
+      "smell": "Configuration is turning into schema + defaults + overlays + custom validation code.",
+      "description": "Configuration composition and validation are becoming a constraint system in disguise.",
+      "positive_signals": [
+        "defaults",
+        "schema validation",
+        "environment overlays",
+        "partial values",
+        "constraints across fields"
+      ],
+      "negative_signals": [
+        "configuration is flat and static",
+        "a conventional schema already expresses every required rule cleanly"
+      ],
+      "keywords": [
+        "yaml",
+        "config",
+        "schema",
+        "defaults",
+        "overlay",
+        "validation"
+      ]
+    },
+    {
+      "id": "documents.format-conversion",
+      "family": "documents",
+      "smell": "I am writing pairwise converters among documentation and publishing formats.",
+      "description": "The need is structured conversion among markup, office, publishing, or ebook formats rather than extraction from arbitrary binaries.",
+      "positive_signals": [
+        "markdown",
+        "docx",
+        "latex",
+        "html",
+        "epub",
+        "citations"
+      ],
+      "negative_signals": [
+        "the primary need is arbitrary binary content extraction",
+        "pixel-identical rendering is required"
+      ],
+      "keywords": [
+        "markdown",
+        "docx",
+        "latex",
+        "html",
+        "epub",
+        "convert"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "research.crossing-cost-atlas",
+      "kind": "research",
+      "title": "Crossing-Cost Advantage Atlas: Where Specialist Ecosystems Actually Earn the Boundary",
+      "source": "research/2026-09-25-crossing-cost-advantage-atlas.md",
+      "observed_on": "2026-09-25"
+    },
+    {
+      "id": "research.language-override-atlas",
+      "kind": "research",
+      "title": "Programming-Language Ecosystem Override Atlas",
+      "source": "research/2026-09-25-programming-language-ecosystem-override-atlas.md",
+      "observed_on": "2026-09-25"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "rec.tika.heterogeneous-extraction",
+      "trigger_id": "documents.heterogeneous-extraction",
+      "system_id": "apache-tika",
+      "strength": "extremely-strong",
+      "advantage": "Deletes a large parser-integration subsystem by presenting broad document detection, text extraction, and metadata normalization behind one surface.",
+      "avoid_when": [
+        "The corpus is one narrow well-supported format.",
+        "Exact page geometry or rendering fidelity is the actual product requirement."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "format-specific host-language libraries",
+          "reason": "Prefer them when format scope is narrow and fidelity requirements are specific."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "Tika app/server or a tiny JBang/JVM wrapper",
+        "notes": "Borrow the capability without making the whole application a Java application."
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Normalize a corpus containing PDFs, Office files, email containers, EPUB, archives, and metadata-heavy binaries into searchable text/metadata.",
+      "experiment_ids": [
+        "exp.hostile-document-corpus"
+      ]
+    },
+    {
+      "id": "rec.souffle.fixed-point",
+      "trigger_id": "analysis.fixed-point-propagation",
+      "system_id": "souffle",
+      "strength": "very-strong",
+      "advantage": "Turns recursive fixed-point propagation into declarative Datalog and supplies optimized evaluation/indexing machinery instead of hand-maintained worklists.",
+      "avoid_when": [
+        "Execution order and side effects are central to correctness.",
+        "The workload is dominated by numerical kernels rather than relations."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "imperative worklist algorithm",
+          "reason": "Keep it when the relation set is tiny or operational ordering itself is the point."
+        },
+        {
+          "name": "general database recursive CTEs",
+          "reason": "Useful when the analysis already naturally lives inside an RDBMS and performance/expressiveness is sufficient."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "facts in / relations out, or compile to a generated executable"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "medium",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Express whole-program reachability or taint propagation as recursive relations instead of queues, visited sets, and convergence loops.",
+      "experiment_ids": [
+        "exp.fixed-point-bakeoff"
+      ]
+    },
+    {
+      "id": "rec.roslyn.csharp-semantics",
+      "trigger_id": "code.csharp-semantics",
+      "system_id": "roslyn",
+      "strength": "extremely-strong",
+      "advantage": "Uses the compiler's own semantic model for binding, symbols, overload resolution, diagnostics, and transformations instead of approximating C# meaning.",
+      "avoid_when": [
+        "Only concrete syntax is needed.",
+        "The target language is outside Roslyn's compiler surface."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "tree-sitter",
+          "name": "Tree-sitter",
+          "reason": "Excellent for syntax, but deliberately does not provide C# compiler semantics."
+        }
+      ],
+      "boundary": {
+        "kind": "process-rpc",
+        "interface": "small .NET worker or direct library when the host is already .NET"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Refactor symbol usages correctly across aliases, generics, overloads, inferred types, and partial classes."
+    },
+    {
+      "id": "rec.tree-sitter.incremental-syntax",
+      "trigger_id": "code.incremental-syntax",
+      "system_id": "tree-sitter",
+      "strength": "extremely-strong",
+      "advantage": "Provides incremental, error-tolerant syntax trees across many languages and is designed for interactive source that may not currently compile.",
+      "avoid_when": [
+        "Compiler-faithful symbol binding or type semantics are required."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "roslyn",
+          "name": "Roslyn",
+          "reason": "Prefer when actual C#/VB compiler semantics matter more than cross-language incremental syntax."
+        }
+      ],
+      "boundary": {
+        "kind": "library-ffi",
+        "interface": "native or Wasm binding"
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Maintain syntax trees for a multi-language editor while users are halfway through typing invalid code."
+    },
+    {
+      "id": "rec.cue.config-constraints",
+      "trigger_id": "config.schema-defaults-overlays",
+      "system_id": "cue",
+      "strength": "very-strong",
+      "advantage": "Collapses values, schemas, defaults, validation, and composition into one constraint/unification representation.",
+      "avoid_when": [
+        "Configuration is flat, static, and already well-served by a conventional schema.",
+        "Introducing a new DSL costs more than the duplicated validation logic."
+      ],
+      "closest_alternatives": [
+        {
+          "name": "JSON Schema + templating/overlay system",
+          "reason": "Prefer when validation is the only nontrivial concern and composition semantics remain simple."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "cue vet/export at build or configuration-generation time"
+      },
+      "crossing_cost": {
+        "learning": "medium",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas"
+      ],
+      "example": "Replace YAML overlays plus defaults plus schema validation plus bespoke cross-field checks with a single constrained configuration model.",
+      "experiment_ids": [
+        "exp.config-stack-bakeoff"
+      ]
+    },
+    {
+      "id": "rec.pandoc.format-conversion",
+      "trigger_id": "documents.format-conversion",
+      "system_id": "pandoc",
+      "strength": "extremely-strong",
+      "advantage": "Normalizes many structured document dialects through a common document AST, avoiding a matrix of pairwise converters.",
+      "avoid_when": [
+        "Required conversion fidelity is outside Pandoc's supported semantics.",
+        "The problem is extraction from arbitrary binary formats rather than structured conversion."
+      ],
+      "closest_alternatives": [
+        {
+          "system_id": "apache-tika",
+          "name": "Apache Tika",
+          "reason": "Prefer for broad content extraction/metadata normalization rather than format-to-format publishing conversion."
+        }
+      ],
+      "boundary": {
+        "kind": "file-cli",
+        "interface": "pandoc executable with files/stdin/stdout",
+        "notes": "This is usually not a reason to adopt Haskell."
+      },
+      "crossing_cost": {
+        "learning": "low",
+        "integration": "low",
+        "operational": "low",
+        "licensing": "low"
+      },
+      "confidence": "high",
+      "evidence_ids": [
+        "research.crossing-cost-atlas",
+        "research.language-override-atlas"
+      ],
+      "example": "Convert Markdown, reStructuredText, LaTeX, HTML, DOCX, or EPUB through one maintained conversion engine."
+    }
+  ],
+  "experiments": [
+    {
+      "id": "exp.hostile-document-corpus",
+      "title": "Hostile mixed-format document corpus",
+      "hypothesis": "Tika materially increases successful extraction coverage while reducing format-specific integration code.",
+      "success_criteria": [
+        "Higher format coverage on the same corpus",
+        "Less format-specific code",
+        "Acceptable startup/memory cost"
+      ],
+      "system_ids": [
+        "apache-tika"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "exp.fixed-point-bakeoff",
+      "title": "Recursive analysis bake-off",
+      "hypothesis": "Soufflé reduces implementation complexity for monotone recursive analyses without unacceptable performance cost.",
+      "success_criteria": [
+        "Substantially less convergence/indexing machinery",
+        "Equivalent result set",
+        "Competitive runtime at representative scale"
+      ],
+      "system_ids": [
+        "souffle"
+      ],
+      "status": "proposed"
+    },
+    {
+      "id": "exp.config-stack-bakeoff",
+      "title": "Constraint-oriented configuration bake-off",
+      "hypothesis": "CUE can replace a multi-layer schema/default/overlay/validation stack with a simpler single representation.",
+      "success_criteria": [
+        "Fewer independent configuration layers",
+        "Equivalent or stronger validation",
+        "Clearer override semantics"
+      ],
+      "system_ids": [
+        "cue"
+      ],
+      "status": "proposed"
+    }
+  ]
+}
