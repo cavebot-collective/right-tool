@@ -1,6 +1,6 @@
 # jq vs Python JSON-pipeline reshaping bake-off
 
-Status: **preregistered; results not yet run**
+Status: **completed — mixed result; preregistered strengthening threshold not met**
 
 ## Question
 
@@ -96,3 +96,15 @@ Preserve:
 - conclusion
 
 No conclusion should be written before raw results are produced.
+
+
+## Results
+
+See:
+- [raw results](results.json)
+- [post-preregistered runtime diagnostic](diagnostic.json)
+- [conclusion](conclusion.md)
+- [captured versions](versions.txt)
+- [artifact hashes](SHA256SUMS)
+
+The small and large datasets are regenerated deterministically from `generate_data.py`; their measured SHA-256 values are preserved in `results.json`.
