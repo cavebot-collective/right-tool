@@ -1,0 +1,369 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2780" height="3228" viewBox="0 0 2780 3228">
+
+<style>
+text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}.title{font-size:18px;font-weight:700}.small{font-size:13px}.tiny{font-size:12px}.root{fill:#111827;stroke:#111827}.family{fill:#e0f2fe;stroke:#0284c7}.trigger{fill:#f8fafc;stroke:#64748b}.guide{fill:#fef3c7;stroke:#d97706}.system{fill:#dcfce7;stroke:#16a34a;stroke-width:2}.edge{fill:none;stroke:#cbd5e1;stroke-width:2}.edgeStrong{fill:none;stroke:#94a3b8;stroke-width:2.2}.rootText{fill:#fff;font-size:15px;font-weight:700}.familyText{font-size:14px;font-weight:700;fill:#0c4a6e}.systemText{font-size:14px;font-weight:700;fill:#14532d}.muted{font-size:11px;fill:#475569}
+</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<path d="M 280 1614 H 315 V 125 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 243 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 420 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 597 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 951 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 1305 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 1482 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 1659 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 1777 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 1895 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2013 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2131 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2249 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2367 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2485 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2603 H 350" class="edge"/>
+<path d="M 280 1614 H 315 V 2898 H 350" class="edge"/>
+<path d="M 570 1482 H 610 V 1541 H 650" class="edge"/>
+<path d="M 570 125 H 610 V 125 H 650" class="edge"/>
+<path d="M 570 420 H 610 V 361 H 650" class="edge"/>
+<path d="M 570 420 H 610 V 479 H 650" class="edge"/>
+<path d="M 570 597 H 610 V 597 H 650" class="edge"/>
+<path d="M 570 1482 H 610 V 1423 H 650" class="edge"/>
+<path d="M 570 2603 H 610 V 2603 H 650" class="edge"/>
+<path d="M 570 2131 H 610 V 2131 H 650" class="edge"/>
+<path d="M 570 1777 H 610 V 1777 H 650" class="edge"/>
+<path d="M 570 1305 H 610 V 1305 H 650" class="edge"/>
+<path d="M 570 2367 H 610 V 2367 H 650" class="edge"/>
+<path d="M 570 2485 H 610 V 2485 H 650" class="edge"/>
+<path d="M 570 951 H 610 V 1010 H 650" class="edge"/>
+<path d="M 570 951 H 610 V 1187 H 650" class="edge"/>
+<path d="M 570 951 H 610 V 715 H 650" class="edge"/>
+<path d="M 570 951 H 610 V 833 H 650" class="edge"/>
+<path d="M 570 2898 H 610 V 2839 H 650" class="edge"/>
+<path d="M 570 2898 H 610 V 3075 H 650" class="edge"/>
+<path d="M 570 2898 H 610 V 2721 H 650" class="edge"/>
+<path d="M 570 2898 H 610 V 2957 H 650" class="edge"/>
+<path d="M 570 2249 H 610 V 2249 H 650" class="edge"/>
+<path d="M 570 2013 H 610 V 2013 H 650" class="edge"/>
+<path d="M 570 243 H 610 V 243 H 650" class="edge"/>
+<path d="M 570 1659 H 610 V 1659 H 650" class="edge"/>
+<path d="M 570 1895 H 610 V 1895 H 650" class="edge"/>
+<path d="M 1170 125 H 1215 V 125 H 1260" class="edgeStrong"/>
+<path d="M 2080 125 H 2145 V 125 H 2210" class="edgeStrong"/>
+<path d="M 1170 243 H 1215 V 243 H 1260" class="edgeStrong"/>
+<path d="M 2080 243 H 2145 V 243 H 2210" class="edgeStrong"/>
+<path d="M 1170 361 H 1215 V 361 H 1260" class="edgeStrong"/>
+<path d="M 2080 361 H 2145 V 361 H 2210" class="edgeStrong"/>
+<path d="M 1170 479 H 1215 V 479 H 1260" class="edgeStrong"/>
+<path d="M 2080 479 H 2145 V 479 H 2210" class="edgeStrong"/>
+<path d="M 1170 597 H 1215 V 597 H 1260" class="edgeStrong"/>
+<path d="M 2080 597 H 2145 V 597 H 2210" class="edgeStrong"/>
+<path d="M 1170 715 H 1215 V 715 H 1260" class="edgeStrong"/>
+<path d="M 2080 715 H 2145 V 715 H 2210" class="edgeStrong"/>
+<path d="M 1170 833 H 1215 V 833 H 1260" class="edgeStrong"/>
+<path d="M 2080 833 H 2145 V 833 H 2210" class="edgeStrong"/>
+<path d="M 1170 1010 H 1215 V 951 H 1260" class="edgeStrong"/>
+<path d="M 2080 951 H 2145 V 951 H 2210" class="edgeStrong"/>
+<path d="M 1170 1010 H 1215 V 1069 H 1260" class="edgeStrong"/>
+<path d="M 2080 1069 H 2145 V 1069 H 2210" class="edgeStrong"/>
+<path d="M 1170 1187 H 1215 V 1187 H 1260" class="edgeStrong"/>
+<path d="M 2080 1187 H 2145 V 1187 H 2210" class="edgeStrong"/>
+<path d="M 1170 1305 H 1215 V 1305 H 1260" class="edgeStrong"/>
+<path d="M 2080 1305 H 2145 V 1305 H 2210" class="edgeStrong"/>
+<path d="M 1170 1423 H 1215 V 1423 H 1260" class="edgeStrong"/>
+<path d="M 2080 1423 H 2145 V 1423 H 2210" class="edgeStrong"/>
+<path d="M 1170 1541 H 1215 V 1541 H 1260" class="edgeStrong"/>
+<path d="M 2080 1541 H 2145 V 1541 H 2210" class="edgeStrong"/>
+<path d="M 1170 1659 H 1215 V 1659 H 1260" class="edgeStrong"/>
+<path d="M 2080 1659 H 2145 V 1659 H 2210" class="edgeStrong"/>
+<path d="M 1170 1777 H 1215 V 1777 H 1260" class="edgeStrong"/>
+<path d="M 2080 1777 H 2145 V 1777 H 2210" class="edgeStrong"/>
+<path d="M 1170 1895 H 1215 V 1895 H 1260" class="edgeStrong"/>
+<path d="M 2080 1895 H 2145 V 1895 H 2210" class="edgeStrong"/>
+<path d="M 1170 2013 H 1215 V 2013 H 1260" class="edgeStrong"/>
+<path d="M 2080 2013 H 2145 V 2013 H 2210" class="edgeStrong"/>
+<path d="M 1170 2131 H 1215 V 2131 H 1260" class="edgeStrong"/>
+<path d="M 2080 2131 H 2145 V 2131 H 2210" class="edgeStrong"/>
+<path d="M 1170 2249 H 1215 V 2249 H 1260" class="edgeStrong"/>
+<path d="M 2080 2249 H 2145 V 2249 H 2210" class="edgeStrong"/>
+<path d="M 1170 2367 H 1215 V 2367 H 1260" class="edgeStrong"/>
+<path d="M 2080 2367 H 2145 V 2367 H 2210" class="edgeStrong"/>
+<path d="M 1170 2485 H 1215 V 2485 H 1260" class="edgeStrong"/>
+<path d="M 2080 2485 H 2145 V 2485 H 2210" class="edgeStrong"/>
+<path d="M 1170 2603 H 1215 V 2603 H 1260" class="edgeStrong"/>
+<path d="M 2080 2603 H 2145 V 2603 H 2210" class="edgeStrong"/>
+<path d="M 1170 2721 H 1215 V 2721 H 1260" class="edgeStrong"/>
+<path d="M 2080 2721 H 2145 V 2721 H 2210" class="edgeStrong"/>
+<path d="M 1170 2839 H 1215 V 2839 H 1260" class="edgeStrong"/>
+<path d="M 2080 2839 H 2145 V 2839 H 2210" class="edgeStrong"/>
+<path d="M 1170 2957 H 1215 V 2957 H 1260" class="edgeStrong"/>
+<path d="M 2080 2957 H 2145 V 2957 H 2210" class="edgeStrong"/>
+<path d="M 1170 3075 H 1215 V 3075 H 1260" class="edgeStrong"/>
+<path d="M 2080 3075 H 2145 V 3075 H 2210" class="edgeStrong"/>
+<rect x="30" y="1576" width="250" height="76" rx="18" class="root"/>
+<text x="50" y="1607" class="rootText"><tspan x="50" dy="0">What kind of machinery</tspan><tspan x="50" dy="20">are you about to reinvent?</tspan></text>
+<rect x="350" y="97" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="130" class="familyText"><tspan x="364" dy="0">Analysis</tspan></text>
+<rect x="350" y="215" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="248" class="familyText"><tspan x="364" dy="0">Build</tspan></text>
+<rect x="350" y="392" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="425" class="familyText"><tspan x="364" dy="0">Code Analysis</tspan></text>
+<rect x="350" y="569" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="602" class="familyText"><tspan x="364" dy="0">Configuration</tspan></text>
+<rect x="350" y="923" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="956" class="familyText"><tspan x="364" dy="0">Constraints</tspan></text>
+<rect x="350" y="1277" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="1310" class="familyText"><tspan x="364" dy="0">Data Transformation</tspan></text>
+<rect x="350" y="1454" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="1487" class="familyText"><tspan x="364" dy="0">Documents</tspan></text>
+<rect x="350" y="1631" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="1664" class="familyText"><tspan x="364" dy="0">Extensibility</tspan></text>
+<rect x="350" y="1749" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="1782" class="familyText"><tspan x="364" dy="0">Geospatial</tspan></text>
+<rect x="350" y="1867" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="1900" class="familyText"><tspan x="364" dy="0">Hardware</tspan></text>
+<rect x="350" y="1985" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2018" class="familyText"><tspan x="364" dy="0">Mathematics</tspan></text>
+<rect x="350" y="2103" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2136" class="familyText"><tspan x="364" dy="0">Media</tspan></text>
+<rect x="350" y="2221" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2254" class="familyText"><tspan x="364" dy="0">Numerics</tspan></text>
+<rect x="350" y="2339" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2372" class="familyText"><tspan x="364" dy="0">Policy</tspan></text>
+<rect x="350" y="2457" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2490" class="familyText"><tspan x="364" dy="0">Programming Languages</tspan></text>
+<rect x="350" y="2575" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2608" class="familyText"><tspan x="364" dy="0">Search</tspan></text>
+<rect x="350" y="2870" width="220" height="56" rx="12" class="family"/>
+<text x="364" y="2903" class="familyText"><tspan x="364" dy="0">Verification</tspan></text>
+<rect x="650" y="87" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="115" class="small"><tspan x="664" dy="0">I have a work queue that propagates facts until nothing</tspan><tspan x="664" dy="17">changes.</tspan></text>
+<rect x="650" y="205" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="233" class="small"><tspan x="664" dy="0">Environment and toolchain drift has become part of the bug</tspan><tspan x="664" dy="17">surface.</tspan></text>
+<rect x="650" y="323" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="351" class="small"><tspan x="664" dy="0">I need to know what C# code means, not merely how it parses.</tspan></text>
+<rect x="650" y="441" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="469" class="small"><tspan x="664" dy="0">I need syntax trees while source is incomplete, malformed, or</tspan><tspan x="664" dy="17">changing interactively.</tspan></text>
+<rect x="650" y="559" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="587" class="small"><tspan x="664" dy="0">Configuration is turning into schema + defaults + overlays +</tspan><tspan x="664" dy="17">custom validation code.</tspan></text>
+<rect x="650" y="677" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="705" class="small"><tspan x="664" dy="0">I am generating candidate worlds under defaults, exclusions,</tspan><tspan x="664" dy="17">and combinatorial rules.</tspan></text>
+<rect x="650" y="795" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="823" class="small"><tspan x="664" dy="0">I keep writing recursive search where arguments may be known</tspan><tspan x="664" dy="17">in either direction.</tspan></text>
+<rect x="650" y="972" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1000" class="small"><tspan x="664" dy="0">I am hand-writing search over arithmetic, bit-vectors, arrays,</tspan><tspan x="664" dy="17">or logical constraints.</tspan></text>
+<rect x="650" y="1149" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1177" class="small"><tspan x="664" dy="0">I want to model scheduling/allocation constraints without</tspan><tspan x="664" dy="17">committing to one solver API.</tspan></text>
+<rect x="650" y="1267" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1295" class="small"><tspan x="664" dy="0">I need a small program just to reshape JSON in a pipeline.</tspan></text>
+<rect x="650" y="1385" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1413" class="small"><tspan x="664" dy="0">I am writing pairwise converters among documentation and</tspan><tspan x="664" dy="17">publishing formats.</tspan></text>
+<rect x="650" y="1503" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1531" class="small"><tspan x="664" dy="0">I am accumulating one parser per incoming file type.</tspan></text>
+<rect x="650" y="1621" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1649" class="small"><tspan x="664" dy="0">My application needs a user/plugin scripting language and I am</tspan><tspan x="664" dy="17">about to invent one.</tspan></text>
+<rect x="650" y="1739" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1767" class="small"><tspan x="664" dy="0">I am writing geospatial format and coordinate-system plumbing.</tspan></text>
+<rect x="650" y="1857" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="1885" class="small"><tspan x="664" dy="0">I want software-style fast tests or fuzzing over</tspan><tspan x="664" dy="17">Verilog/SystemVerilog RTL.</tspan></text>
+<rect x="650" y="1975" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2003" class="small"><tspan x="664" dy="0">I need an independently implemented exact/symbolic</tspan><tspan x="664" dy="17">mathematical oracle.</tspan></text>
+<rect x="650" y="2093" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2121" class="small"><tspan x="664" dy="0">I am starting to write codec/container/transcoding glue.</tspan></text>
+<rect x="650" y="2211" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2239" class="small"><tspan x="664" dy="0">My custom mathematical objects keep falling out of the</tspan><tspan x="664" dy="17">numerical stack.</tspan></text>
+<rect x="650" y="2447" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2475" class="small"><tspan x="664" dy="0">I am writing a programming-language semantics on paper and a</tspan><tspan x="664" dy="17">separate interpreter to test it.</tspan></text>
+<rect x="650" y="2329" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2357" class="small"><tspan x="664" dy="0">The same policy logic is being reimplemented at several</tspan><tspan x="664" dy="17">enforcement points.</tspan></text>
+<rect x="650" y="2565" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2593" class="small"><tspan x="664" dy="0">I am building a serious local search engine inside an</tspan><tspan x="664" dy="17">application.</tspan></text>
+<rect x="650" y="2683" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2711" class="small"><tspan x="664" dy="0">The proof obligation belongs directly beside executable</tspan><tspan x="664" dy="17">implementation code.</tspan></text>
+<rect x="650" y="2801" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2829" class="small"><tspan x="664" dy="0">The bug I fear is some legal interleaving of retries,</tspan><tspan x="664" dy="17">messages, failover, or concurrent steps.</tspan></text>
+<rect x="650" y="2919" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="2947" class="small"><tspan x="664" dy="0">Testing or bounded search is insufficient; I need a</tspan><tspan x="664" dy="17">machine-checked proof.</tspan></text>
+<rect x="650" y="3037" width="520" height="76" rx="12" class="trigger"/>
+<text x="664" y="3065" class="small"><tspan x="664" dy="0">I want a tiny concrete counterexample to a structural</tspan><tspan x="664" dy="17">invariant.</tspan></text>
+<rect x="1260" y="77" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="101" class="title"><tspan x="1274" dy="0">Soufflé — very-strong · file-cli</tspan></text>
+<text x="1274" y="123" class="tiny"><tspan x="1274" dy="0">Why: Turns recursive fixed-point propagation into declarative Datalog and supplies optimized</tspan><tspan x="1274" dy="16">evaluation/indexing machinery i…</tspan></text>
+<text x="1274" y="154" class="muted"><tspan x="1274" dy="0">Avoid if: Execution order and side effects are central to correctness.</tspan></text>
+<rect x="1260" y="195" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="219" class="title"><tspan x="1274" dy="0">Nix — strong · spec-artifact</tspan></text>
+<text x="1274" y="241" class="tiny"><tspan x="1274" dy="0">Why: Makes the dependency/toolchain closure explicit enough to reproduce complex environments rather</tspan><tspan x="1274" dy="16">than relying on ambient…</tspan></text>
+<text x="1274" y="272" class="muted"><tspan x="1274" dy="0">Avoid if: A lockfile plus container already provides adequate reproducibility.</tspan></text>
+<rect x="1260" y="313" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="337" class="title"><tspan x="1274" dy="0">Roslyn — extremely-strong · process-rpc</tspan></text>
+<text x="1274" y="359" class="tiny"><tspan x="1274" dy="0">Why: Uses the compiler&apos;s own semantic model for binding, symbols, overload resolution, diagnostics, and</tspan><tspan x="1274" dy="16">transformations inst…</tspan></text>
+<text x="1274" y="390" class="muted"><tspan x="1274" dy="0">Avoid if: Only concrete syntax is needed.</tspan></text>
+<rect x="1260" y="431" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="455" class="title"><tspan x="1274" dy="0">Tree-sitter — extremely-strong · library-ffi</tspan></text>
+<text x="1274" y="477" class="tiny"><tspan x="1274" dy="0">Why: Provides incremental, error-tolerant syntax trees across many languages and is designed for</tspan><tspan x="1274" dy="16">interactive source that may…</tspan></text>
+<text x="1274" y="508" class="muted"><tspan x="1274" dy="0">Avoid if: Compiler-faithful symbol binding or type semantics are required.</tspan></text>
+<rect x="1260" y="549" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="573" class="title"><tspan x="1274" dy="0">CUE — very-strong · file-cli</tspan></text>
+<text x="1274" y="595" class="tiny"><tspan x="1274" dy="0">Why: Collapses values, schemas, defaults, validation, and composition into one constraint/unification</tspan><tspan x="1274" dy="16">representation.</tspan></text>
+<text x="1274" y="626" class="muted"><tspan x="1274" dy="0">Avoid if: Configuration is flat, static, and already well-served by a conventional schema.</tspan></text>
+<rect x="1260" y="667" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="691" class="title"><tspan x="1274" dy="0">clingo — very-strong · file-cli</tspan></text>
+<text x="1274" y="713" class="tiny"><tspan x="1274" dy="0">Why: Represents combinatorial admissible-world search with defaults and exceptions directly, replacing</tspan><tspan x="1274" dy="16">hand-coded candidate…</tspan></text>
+<text x="1274" y="744" class="muted"><tspan x="1274" dy="0">Avoid if: The logic is monotone recursive closure better expressed as Datalog.</tspan></text>
+<rect x="1260" y="785" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="809" class="title"><tspan x="1274" dy="0">SWI-Prolog — strong · process-rpc</tspan></text>
+<text x="1274" y="831" class="tiny"><tspan x="1274" dy="0">Why: Turns recursive search and bidirectional relations into direct language semantics through</tspan><tspan x="1274" dy="16">unification, backtracking, an…</tspan></text>
+<text x="1274" y="862" class="muted"><tspan x="1274" dy="0">Avoid if: The computation is a large monotone fixed point better suited to Datalog.</tspan></text>
+<rect x="1260" y="903" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="927" class="title"><tspan x="1274" dy="0">cvc5 — strong · process-rpc</tspan></text>
+<text x="1274" y="949" class="tiny"><tspan x="1274" dy="0">Why: Offers an independent modern SMT implementation with broad theory support, useful both as a primary</tspan><tspan x="1274" dy="16">solver and as a cro…</tspan></text>
+<text x="1274" y="980" class="muted"><tspan x="1274" dy="0">Avoid if: Z3 already satisfies the workload and independent validation has no value.</tspan></text>
+<rect x="1260" y="1021" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1045" class="title"><tspan x="1274" dy="0">Z3 — very-strong · process-rpc</tspan></text>
+<text x="1274" y="1067" class="tiny"><tspan x="1274" dy="0">Why: Replaces custom logical search with mature SMT theory reasoning and propagation across mixed</tspan><tspan x="1274" dy="16">Boolean/arithmetic/bit-vec…</tspan></text>
+<text x="1274" y="1098" class="muted"><tspan x="1274" dy="0">Avoid if: Constraint programming globals/scheduling are the natural abstraction.</tspan></text>
+<rect x="1260" y="1139" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1163" class="title"><tspan x="1274" dy="0">MiniZinc — very-strong · spec-artifact</tspan></text>
+<text x="1274" y="1185" class="tiny"><tspan x="1274" dy="0">Why: Separates a high-level constraint model from solver choice, avoiding solver-specific imperative</tspan><tspan x="1274" dy="16">search code.</tspan></text>
+<text x="1274" y="1216" class="muted"><tspan x="1274" dy="0">Avoid if: Solver-specific APIs/features are the core requirement.</tspan></text>
+<rect x="1260" y="1257" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1281" class="title"><tspan x="1274" dy="0">jq — strong · file-cli</tspan></text>
+<text x="1274" y="1303" class="tiny"><tspan x="1274" dy="0">Why: The representation matches the problem directly and crossing cost is effectively zero in</tspan><tspan x="1274" dy="16">pipeline-oriented JSON work.</tspan></text>
+<text x="1274" y="1334" class="muted"><tspan x="1274" dy="0">Avoid if: The transformation needs substantial application state, I/O orchestration, or domain behavior.</tspan></text>
+<rect x="1260" y="1375" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1399" class="title"><tspan x="1274" dy="0">Pandoc — extremely-strong · file-cli</tspan></text>
+<text x="1274" y="1421" class="tiny"><tspan x="1274" dy="0">Why: Normalizes many structured document dialects through a common document AST, avoiding a matrix of</tspan><tspan x="1274" dy="16">pairwise converters.</tspan></text>
+<text x="1274" y="1452" class="muted"><tspan x="1274" dy="0">Avoid if: Required conversion fidelity is outside Pandoc&apos;s supported semantics.</tspan></text>
+<rect x="1260" y="1493" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1517" class="title"><tspan x="1274" dy="0">Apache Tika — extremely-strong · process-rpc</tspan></text>
+<text x="1274" y="1539" class="tiny"><tspan x="1274" dy="0">Why: Deletes a large parser-integration subsystem by presenting broad document detection, text</tspan><tspan x="1274" dy="16">extraction, and metadata norm…</tspan></text>
+<text x="1274" y="1570" class="muted"><tspan x="1274" dy="0">Avoid if: The corpus is one narrow well-supported format.</tspan></text>
+<rect x="1260" y="1611" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1635" class="title"><tspan x="1274" dy="0">Lua — very-strong · embedded-runtime</tspan></text>
+<text x="1274" y="1657" class="tiny"><tspan x="1274" dy="0">Why: Provides a purpose-built small embeddable language/runtime instead of inventing a bespoke extension</tspan><tspan x="1274" dy="16">DSL or embedding a…</tspan></text>
+<text x="1274" y="1688" class="muted"><tspan x="1274" dy="0">Avoid if: Users specifically need the Python/JavaScript package ecosystem.</tspan></text>
+<rect x="1260" y="1729" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1753" class="title"><tspan x="1274" dy="0">GDAL — extremely-strong · file-cli</tspan></text>
+<text x="1274" y="1775" class="tiny"><tspan x="1274" dy="0">Why: Owns a vast portion of geospatial format and coordinate-system plumbing that is expensive and</tspan><tspan x="1274" dy="16">error-prone to recreate.</tspan></text>
+<text x="1274" y="1806" class="muted"><tspan x="1274" dy="0">Avoid if: The data has no geospatial coordinate semantics.</tspan></text>
+<rect x="1260" y="1847" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1871" class="title"><tspan x="1274" dy="0">Verilator — very-strong · generated-artifact</tspan></text>
+<text x="1274" y="1893" class="tiny"><tspan x="1274" dy="0">Why: Turns RTL into fast native executable models, enabling ordinary software CI, fuzzing, and</tspan><tspan x="1274" dy="16">differential-test techniques…</tspan></text>
+<text x="1274" y="1924" class="muted"><tspan x="1274" dy="0">Avoid if: Analog/mixed-signal behavior dominates.</tspan></text>
+<rect x="1260" y="1965" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="1989" class="title"><tspan x="1274" dy="0">Wolfram Engine — very-strong · process-rpc</tspan></text>
+<text x="1274" y="2011" class="tiny"><tspan x="1274" dy="0">Why: Supplies a very broad independently implemented CAS surface for exact/symbolic reference</tspan><tspan x="1274" dy="16">computation and differential t…</tspan></text>
+<text x="1274" y="2042" class="muted"><tspan x="1274" dy="0">Avoid if: Open-source symbolic tooling already covers the required mathematics.</tspan></text>
+<rect x="1260" y="2083" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2107" class="title"><tspan x="1274" dy="0">FFmpeg — extremely-strong · file-cli</tspan></text>
+<text x="1274" y="2129" class="tiny"><tspan x="1274" dy="0">Why: Deletes broad codec/container/filtering integration by concentrating decades of media</tspan><tspan x="1274" dy="16">interoperability behind a CLI/lib…</tspan></text>
+<text x="1274" y="2160" class="muted"><tspan x="1274" dy="0">Avoid if: A single platform-native media API completely owns the narrow requirement.</tspan></text>
+<rect x="1260" y="2201" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2225" class="title"><tspan x="1274" dy="0">Julia / SciML / Symbolics — very-strong · subsystem-language</tspan></text>
+<text x="1274" y="2247" class="tiny"><tspan x="1274" dy="0">Why: Lets unusual mathematical representations participate generically across symbolic transforms, AD,</tspan><tspan x="1274" dy="16">solvers, optimization…</tspan></text>
+<text x="1274" y="2278" class="muted"><tspan x="1274" dy="0">Avoid if: The task is routine dataframe/scientific analysis already well-served by Python/R.</tspan></text>
+<rect x="1260" y="2319" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2343" class="title"><tspan x="1274" dy="0">OPA / Rego — very-strong · process-rpc</tspan></text>
+<text x="1274" y="2365" class="tiny"><tspan x="1274" dy="0">Why: Centralizes declarative policy semantics across heterogeneous enforcement points instead of</tspan><tspan x="1274" dy="16">duplicating policy code per…</tspan></text>
+<text x="1274" y="2396" class="muted"><tspan x="1274" dy="0">Avoid if: The policy is tiny, local, and inseparable from one application&apos;s workflow.</tspan></text>
+<rect x="1260" y="2437" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2461" class="title"><tspan x="1274" dy="0">Racket / Redex — extremely-strong · spec-artifact</tspan></text>
+<text x="1274" y="2483" class="tiny"><tspan x="1274" dy="0">Why: Makes the formal operational semantics itself executable, testable, and generative rather than</tspan><tspan x="1274" dy="16">maintaining a paper mode…</tspan></text>
+<text x="1274" y="2514" class="muted"><tspan x="1274" dy="0">Avoid if: The goal is production compiler implementation rather than semantic modeling.</tspan></text>
+<rect x="1260" y="2555" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2579" class="title"><tspan x="1274" dy="0">Apache Lucene — very-strong · library-ffi</tspan></text>
+<text x="1274" y="2601" class="tiny"><tspan x="1274" dy="0">Why: Provides a mature embedded search engine without requiring a separate search service or rebuilding</tspan><tspan x="1274" dy="16">indexing/ranking/que…</tspan></text>
+<text x="1274" y="2632" class="muted"><tspan x="1274" dy="0">Avoid if: Search needs are limited to simple exact lookup or basic database FTS.</tspan></text>
+<rect x="1260" y="2673" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2697" class="title"><tspan x="1274" dy="0">Dafny — very-strong · subsystem-language</tspan></text>
+<text x="1274" y="2719" class="tiny"><tspan x="1274" dy="0">Why: Keeps executable code and deductive contracts/invariants together, with automated verification and</tspan><tspan x="1274" dy="16">compilation to mains…</tspan></text>
+<text x="1274" y="2750" class="muted"><tspan x="1274" dy="0">Avoid if: A separate behavioral model answers the real question more cheaply.</tspan></text>
+<rect x="1260" y="2791" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2815" class="title"><tspan x="1274" dy="0">TLA+ / PlusCal / TLC — very-strong · spec-artifact</tspan></text>
+<text x="1274" y="2837" class="tiny"><tspan x="1274" dy="0">Why: Explores nondeterministic state-machine behaviors before implementation details hide the</tspan><tspan x="1274" dy="16">concurrency structure, produci…</tspan></text>
+<text x="1274" y="2868" class="muted"><tspan x="1274" dy="0">Avoid if: The main correctness question is static/structural rather than behavioral.</tspan></text>
+<rect x="1260" y="2909" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="2933" class="title"><tspan x="1274" dy="0">Lean 4 — strong · spec-artifact</tspan></text>
+<text x="1274" y="2955" class="tiny"><tspan x="1274" dy="0">Why: Provides a trusted-kernel machine-checked proof environment when tests, bounded search, and SMT are</tspan><tspan x="1274" dy="16">not sufficient evid…</tspan></text>
+<text x="1274" y="2986" class="muted"><tspan x="1274" dy="0">Avoid if: The assurance requirement does not justify formalization cost.</tspan></text>
+<rect x="1260" y="3027" width="820" height="96" rx="12" class="guide"/>
+<text x="1274" y="3051" class="title"><tspan x="1274" dy="0">Alloy — very-strong · spec-artifact</tspan></text>
+<text x="1274" y="3073" class="tiny"><tspan x="1274" dy="0">Why: Expresses finite relational structure compactly and searches for small concrete counterexamples to</tspan><tspan x="1274" dy="16">invariants.</tspan></text>
+<text x="1274" y="3104" class="muted"><tspan x="1274" dy="0">Avoid if: Absence of a bounded counterexample must constitute an unbounded proof.</tspan></text>
+<rect x="2210" y="3043" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="3072" class="systemText"><tspan x="2226" dy="0">Alloy</tspan></text>
+<text x="2226" y="3092" class="muted"><tspan x="2226" dy="0">model-checker · active</tspan></text>
+<rect x="2210" y="2571" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2600" class="systemText"><tspan x="2226" dy="0">Apache Lucene</tspan></text>
+<text x="2226" y="2620" class="muted"><tspan x="2226" dy="0">library · active</tspan></text>
+<rect x="2210" y="1509" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1538" class="systemText"><tspan x="2226" dy="0">Apache Tika</tspan></text>
+<text x="2226" y="1558" class="muted"><tspan x="2226" dy="0">library · active</tspan></text>
+<rect x="2210" y="683" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="712" class="systemText"><tspan x="2226" dy="0">clingo</tspan></text>
+<text x="2226" y="732" class="muted"><tspan x="2226" dy="0">solver · active</tspan></text>
+<rect x="2210" y="565" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="594" class="systemText"><tspan x="2226" dy="0">CUE</tspan></text>
+<text x="2226" y="614" class="muted"><tspan x="2226" dy="0">dsl · active</tspan></text>
+<rect x="2210" y="919" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="948" class="systemText"><tspan x="2226" dy="0">cvc5</tspan></text>
+<text x="2226" y="968" class="muted"><tspan x="2226" dy="0">solver · active</tspan></text>
+<rect x="2210" y="2689" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2718" class="systemText"><tspan x="2226" dy="0">Dafny</tspan></text>
+<text x="2226" y="2738" class="muted"><tspan x="2226" dy="0">language · active</tspan></text>
+<rect x="2210" y="2099" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2128" class="systemText"><tspan x="2226" dy="0">FFmpeg</tspan></text>
+<text x="2226" y="2148" class="muted"><tspan x="2226" dy="0">executable · active</tspan></text>
+<rect x="2210" y="1745" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1774" class="systemText"><tspan x="2226" dy="0">GDAL</tspan></text>
+<text x="2226" y="1794" class="muted"><tspan x="2226" dy="0">library · active</tspan></text>
+<rect x="2210" y="1273" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1302" class="systemText"><tspan x="2226" dy="0">jq</tspan></text>
+<text x="2226" y="1322" class="muted"><tspan x="2226" dy="0">dsl · active</tspan></text>
+<rect x="2210" y="2217" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2246" class="systemText"><tspan x="2226" dy="0">Julia / SciML / Symbolics</tspan></text>
+<text x="2226" y="2266" class="muted"><tspan x="2226" dy="0">platform · active</tspan></text>
+<rect x="2210" y="2925" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2954" class="systemText"><tspan x="2226" dy="0">Lean 4</tspan></text>
+<text x="2226" y="2974" class="muted"><tspan x="2226" dy="0">prover · active</tspan></text>
+<rect x="2210" y="1627" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1656" class="systemText"><tspan x="2226" dy="0">Lua</tspan></text>
+<text x="2226" y="1676" class="muted"><tspan x="2226" dy="0">language · stable</tspan></text>
+<rect x="2210" y="1155" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1184" class="systemText"><tspan x="2226" dy="0">MiniZinc</tspan></text>
+<text x="2226" y="1204" class="muted"><tspan x="2226" dy="0">dsl · active</tspan></text>
+<rect x="2210" y="211" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="240" class="systemText"><tspan x="2226" dy="0">Nix</tspan></text>
+<text x="2226" y="260" class="muted"><tspan x="2226" dy="0">toolchain · active</tspan></text>
+<rect x="2210" y="2335" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2364" class="systemText"><tspan x="2226" dy="0">OPA / Rego</tspan></text>
+<text x="2226" y="2384" class="muted"><tspan x="2226" dy="0">dsl · active</tspan></text>
+<rect x="2210" y="1391" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1420" class="systemText"><tspan x="2226" dy="0">Pandoc</tspan></text>
+<text x="2226" y="1440" class="muted"><tspan x="2226" dy="0">executable · active</tspan></text>
+<rect x="2210" y="2453" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2482" class="systemText"><tspan x="2226" dy="0">Racket / Redex</tspan></text>
+<text x="2226" y="2502" class="muted"><tspan x="2226" dy="0">library · active</tspan></text>
+<rect x="2210" y="329" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="358" class="systemText"><tspan x="2226" dy="0">Roslyn</tspan></text>
+<text x="2226" y="378" class="muted"><tspan x="2226" dy="0">compiler · active</tspan></text>
+<rect x="2210" y="93" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="122" class="systemText"><tspan x="2226" dy="0">Soufflé</tspan></text>
+<text x="2226" y="142" class="muted"><tspan x="2226" dy="0">dsl · active</tspan></text>
+<rect x="2210" y="801" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="830" class="systemText"><tspan x="2226" dy="0">SWI-Prolog</tspan></text>
+<text x="2226" y="850" class="muted"><tspan x="2226" dy="0">language · active</tspan></text>
+<rect x="2210" y="2807" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2836" class="systemText"><tspan x="2226" dy="0">TLA+ / PlusCal / TLC</tspan></text>
+<text x="2226" y="2856" class="muted"><tspan x="2226" dy="0">model-checker · stable</tspan></text>
+<rect x="2210" y="447" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="476" class="systemText"><tspan x="2226" dy="0">Tree-sitter</tspan></text>
+<text x="2226" y="496" class="muted"><tspan x="2226" dy="0">library · active</tspan></text>
+<rect x="2210" y="1863" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1892" class="systemText"><tspan x="2226" dy="0">Verilator</tspan></text>
+<text x="2226" y="1912" class="muted"><tspan x="2226" dy="0">compiler · active</tspan></text>
+<rect x="2210" y="1981" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="2010" class="systemText"><tspan x="2226" dy="0">Wolfram Engine</tspan></text>
+<text x="2226" y="2030" class="muted"><tspan x="2226" dy="0">runtime · active</tspan></text>
+<rect x="2210" y="1037" width="360" height="64" rx="16" class="system"/>
+<text x="2226" y="1066" class="systemText"><tspan x="2226" dy="0">Z3</tspan></text>
+<text x="2226" y="1086" class="muted"><tspan x="2226" dy="0">solver · active</tspan></text>
+</svg>

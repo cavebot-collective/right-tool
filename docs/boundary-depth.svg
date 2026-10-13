@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2686" height="710" viewBox="0 0 2686 710">
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}.lane{fill:#f8fafc;stroke:#cbd5e1}.chip{fill:#ffffff;stroke:#64748b}.head{font-size:15px;font-weight:700}.small{font-size:11px;fill:#64748b}.axis{font-size:14px;font-weight:700;fill:#475569}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="42" class="head"><tspan x="40" dy="0">Integration boundary depth</tspan></text>
+<text x="40" y="70" class="axis"><tspan x="40" dy="0">Lower commitment → higher commitment</tspan></text>
+<rect x="40" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="52" y="106" class="head"><tspan x="52" dy="0">file-cli</tspan></text>
+<text x="52" y="125" class="small"><tspan x="52" dy="0">7 recommendations</tspan></text>
+<rect x="50" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="174" class="head"><tspan x="62" dy="0">clingo</tspan></text>
+<text x="62" y="193" class="small"><tspan x="62" dy="0">solver · very-strong</tspan></text>
+<rect x="50" y="220" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="242" class="head"><tspan x="62" dy="0">CUE</tspan></text>
+<text x="62" y="261" class="small"><tspan x="62" dy="0">dsl · very-strong</tspan></text>
+<rect x="50" y="288" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="310" class="head"><tspan x="62" dy="0">FFmpeg</tspan></text>
+<text x="62" y="329" class="small"><tspan x="62" dy="0">executable · extremely-strong</tspan></text>
+<rect x="50" y="356" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="378" class="head"><tspan x="62" dy="0">GDAL</tspan></text>
+<text x="62" y="397" class="small"><tspan x="62" dy="0">library · extremely-strong</tspan></text>
+<rect x="50" y="424" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="446" class="head"><tspan x="62" dy="0">jq</tspan></text>
+<text x="62" y="465" class="small"><tspan x="62" dy="0">dsl · strong</tspan></text>
+<rect x="50" y="492" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="514" class="head"><tspan x="62" dy="0">Pandoc</tspan></text>
+<text x="62" y="533" class="small"><tspan x="62" dy="0">executable · extremely-strong</tspan></text>
+<rect x="50" y="560" width="290" height="56" rx="10" class="chip"/>
+<text x="62" y="582" class="head"><tspan x="62" dy="0">Soufflé</tspan></text>
+<text x="62" y="601" class="small"><tspan x="62" dy="0">dsl · very-strong</tspan></text>
+<rect x="368" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="380" y="106" class="head"><tspan x="380" dy="0">process-rpc</tspan></text>
+<text x="380" y="125" class="small"><tspan x="380" dy="0">7 recommendations</tspan></text>
+<rect x="378" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="174" class="head"><tspan x="390" dy="0">Apache Tika</tspan></text>
+<text x="390" y="193" class="small"><tspan x="390" dy="0">library · extremely-strong</tspan></text>
+<rect x="378" y="220" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="242" class="head"><tspan x="390" dy="0">cvc5</tspan></text>
+<text x="390" y="261" class="small"><tspan x="390" dy="0">solver · strong</tspan></text>
+<rect x="378" y="288" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="310" class="head"><tspan x="390" dy="0">OPA / Rego</tspan></text>
+<text x="390" y="329" class="small"><tspan x="390" dy="0">dsl · very-strong</tspan></text>
+<rect x="378" y="356" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="378" class="head"><tspan x="390" dy="0">Roslyn</tspan></text>
+<text x="390" y="397" class="small"><tspan x="390" dy="0">compiler · extremely-strong</tspan></text>
+<rect x="378" y="424" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="446" class="head"><tspan x="390" dy="0">SWI-Prolog</tspan></text>
+<text x="390" y="465" class="small"><tspan x="390" dy="0">language · strong</tspan></text>
+<rect x="378" y="492" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="514" class="head"><tspan x="390" dy="0">Wolfram Engine</tspan></text>
+<text x="390" y="533" class="small"><tspan x="390" dy="0">runtime · very-strong</tspan></text>
+<rect x="378" y="560" width="290" height="56" rx="10" class="chip"/>
+<text x="390" y="582" class="head"><tspan x="390" dy="0">Z3</tspan></text>
+<text x="390" y="601" class="small"><tspan x="390" dy="0">solver · very-strong</tspan></text>
+<rect x="696" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="708" y="106" class="head"><tspan x="708" dy="0">library-ffi</tspan></text>
+<text x="708" y="125" class="small"><tspan x="708" dy="0">2 recommendations</tspan></text>
+<rect x="706" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="718" y="174" class="head"><tspan x="718" dy="0">Apache Lucene</tspan></text>
+<text x="718" y="193" class="small"><tspan x="718" dy="0">library · very-strong</tspan></text>
+<rect x="706" y="220" width="290" height="56" rx="10" class="chip"/>
+<text x="718" y="242" class="head"><tspan x="718" dy="0">Tree-sitter</tspan></text>
+<text x="718" y="261" class="small"><tspan x="718" dy="0">library · extremely-strong</tspan></text>
+<rect x="1024" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="1036" y="106" class="head"><tspan x="1036" dy="0">embedded-runtime</tspan></text>
+<text x="1036" y="125" class="small"><tspan x="1036" dy="0">1 recommendation</tspan></text>
+<rect x="1034" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="1046" y="174" class="head"><tspan x="1046" dy="0">Lua</tspan></text>
+<text x="1046" y="193" class="small"><tspan x="1046" dy="0">language · very-strong</tspan></text>
+<rect x="1352" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="1364" y="106" class="head"><tspan x="1364" dy="0">spec-artifact</tspan></text>
+<text x="1364" y="125" class="small"><tspan x="1364" dy="0">6 recommendations</tspan></text>
+<rect x="1362" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="174" class="head"><tspan x="1374" dy="0">Alloy</tspan></text>
+<text x="1374" y="193" class="small"><tspan x="1374" dy="0">model-checker · very-strong</tspan></text>
+<rect x="1362" y="220" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="242" class="head"><tspan x="1374" dy="0">Lean 4</tspan></text>
+<text x="1374" y="261" class="small"><tspan x="1374" dy="0">prover · strong</tspan></text>
+<rect x="1362" y="288" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="310" class="head"><tspan x="1374" dy="0">MiniZinc</tspan></text>
+<text x="1374" y="329" class="small"><tspan x="1374" dy="0">dsl · very-strong</tspan></text>
+<rect x="1362" y="356" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="378" class="head"><tspan x="1374" dy="0">Nix</tspan></text>
+<text x="1374" y="397" class="small"><tspan x="1374" dy="0">toolchain · strong</tspan></text>
+<rect x="1362" y="424" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="446" class="head"><tspan x="1374" dy="0">Racket / Redex</tspan></text>
+<text x="1374" y="465" class="small"><tspan x="1374" dy="0">library · extremely-strong</tspan></text>
+<rect x="1362" y="492" width="290" height="56" rx="10" class="chip"/>
+<text x="1374" y="514" class="head"><tspan x="1374" dy="0">TLA+ / PlusCal / TLC</tspan></text>
+<text x="1374" y="533" class="small"><tspan x="1374" dy="0">model-checker · very-strong</tspan></text>
+<rect x="1680" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="1692" y="106" class="head"><tspan x="1692" dy="0">generated-artifact</tspan></text>
+<text x="1692" y="125" class="small"><tspan x="1692" dy="0">1 recommendation</tspan></text>
+<rect x="1690" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="1702" y="174" class="head"><tspan x="1702" dy="0">Verilator</tspan></text>
+<text x="1702" y="193" class="small"><tspan x="1702" dy="0">compiler · very-strong</tspan></text>
+<rect x="2008" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="2020" y="106" class="head"><tspan x="2020" dy="0">subsystem-language</tspan></text>
+<text x="2020" y="125" class="small"><tspan x="2020" dy="0">2 recommendations</tspan></text>
+<rect x="2018" y="152" width="290" height="56" rx="10" class="chip"/>
+<text x="2030" y="174" class="head"><tspan x="2030" dy="0">Dafny</tspan></text>
+<text x="2030" y="193" class="small"><tspan x="2030" dy="0">language · very-strong</tspan></text>
+<rect x="2018" y="220" width="290" height="56" rx="10" class="chip"/>
+<text x="2030" y="242" class="head"><tspan x="2030" dy="0">Julia / SciML / Symbolics</tspan></text>
+<text x="2030" y="261" class="small"><tspan x="2030" dy="0">platform · very-strong</tspan></text>
+<rect x="2336" y="78" width="310" height="570" rx="14" class="lane"/>
+<text x="2348" y="106" class="head"><tspan x="2348" dy="0">whole-project</tspan></text>
+<text x="2348" y="125" class="small"><tspan x="2348" dy="0">0 recommendations</tspan></text>
+</svg>

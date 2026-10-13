@@ -12,6 +12,8 @@ Examples include FFmpeg for media, Tika for heterogeneous documents, Soufflé fo
 
 ## Start here
 
+- [Visual atlas](docs/atlas.html)
+- [Subsystem triage DAG](docs/triage.md)
 - [Project architecture and roadmap](PROJECT.md)
 - [Research corpus](research/)
   - [Discovery-first crossing-cost atlas](research/2026-09-25-crossing-cost-advantage-atlas.md)

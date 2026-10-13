@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2320" height="1624" viewBox="0 0 2320 1624">
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111827}.panel{fill:#f8fafc;stroke:#cbd5e1;stroke-width:1.5}.chip{fill:#fff;stroke:#94a3b8}.head{font-size:18px;font-weight:700;fill:#0f172a}.meta{font-size:12px;fill:#64748b}.name{font-size:14px;font-weight:700}</style>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="40" y="45" class="head"><tspan x="40" dy="0">Capability topology — systems clustered by problem family</tspan></text>
+<rect x="40" y="90" width="720" height="152" rx="16" class="panel"/>
+<text x="60" y="124" class="head"><tspan x="60" dy="0">Analysis</tspan></text>
+<rect x="58" y="148" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="170" class="name"><tspan x="72" dy="0">Soufflé</tspan></text>
+<text x="550" y="170" class="meta"><tspan x="550" dy="0">dsl</tspan></text>
+<rect x="800" y="90" width="720" height="152" rx="16" class="panel"/>
+<text x="820" y="124" class="head"><tspan x="820" dy="0">Build</tspan></text>
+<rect x="818" y="148" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="170" class="name"><tspan x="832" dy="0">Nix</tspan></text>
+<text x="1310" y="170" class="meta"><tspan x="1310" dy="0">toolchain</tspan></text>
+<rect x="1560" y="90" width="720" height="194" rx="16" class="panel"/>
+<text x="1580" y="124" class="head"><tspan x="1580" dy="0">Code Analysis</tspan></text>
+<rect x="1578" y="148" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="170" class="name"><tspan x="1592" dy="0">Roslyn</tspan></text>
+<text x="2070" y="170" class="meta"><tspan x="2070" dy="0">compiler</tspan></text>
+<rect x="1578" y="190" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="212" class="name"><tspan x="1592" dy="0">Tree-sitter</tspan></text>
+<text x="2070" y="212" class="meta"><tspan x="2070" dy="0">library</tspan></text>
+<rect x="40" y="318" width="720" height="152" rx="16" class="panel"/>
+<text x="60" y="352" class="head"><tspan x="60" dy="0">Configuration</tspan></text>
+<rect x="58" y="376" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="398" class="name"><tspan x="72" dy="0">CUE</tspan></text>
+<text x="550" y="398" class="meta"><tspan x="550" dy="0">dsl</tspan></text>
+<rect x="800" y="318" width="720" height="320" rx="16" class="panel"/>
+<text x="820" y="352" class="head"><tspan x="820" dy="0">Constraints</tspan></text>
+<rect x="818" y="376" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="398" class="name"><tspan x="832" dy="0">clingo</tspan></text>
+<text x="1310" y="398" class="meta"><tspan x="1310" dy="0">solver</tspan></text>
+<rect x="818" y="418" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="440" class="name"><tspan x="832" dy="0">cvc5</tspan></text>
+<text x="1310" y="440" class="meta"><tspan x="1310" dy="0">solver</tspan></text>
+<rect x="818" y="460" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="482" class="name"><tspan x="832" dy="0">MiniZinc</tspan></text>
+<text x="1310" y="482" class="meta"><tspan x="1310" dy="0">dsl</tspan></text>
+<rect x="818" y="502" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="524" class="name"><tspan x="832" dy="0">SWI-Prolog</tspan></text>
+<text x="1310" y="524" class="meta"><tspan x="1310" dy="0">language</tspan></text>
+<rect x="818" y="544" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="566" class="name"><tspan x="832" dy="0">Z3</tspan></text>
+<text x="1310" y="566" class="meta"><tspan x="1310" dy="0">solver</tspan></text>
+<rect x="1560" y="318" width="720" height="152" rx="16" class="panel"/>
+<text x="1580" y="352" class="head"><tspan x="1580" dy="0">Data Transformation</tspan></text>
+<rect x="1578" y="376" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="398" class="name"><tspan x="1592" dy="0">jq</tspan></text>
+<text x="2070" y="398" class="meta"><tspan x="2070" dy="0">dsl</tspan></text>
+<rect x="40" y="672" width="720" height="194" rx="16" class="panel"/>
+<text x="60" y="706" class="head"><tspan x="60" dy="0">Documents</tspan></text>
+<rect x="58" y="730" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="752" class="name"><tspan x="72" dy="0">Apache Tika</tspan></text>
+<text x="550" y="752" class="meta"><tspan x="550" dy="0">library</tspan></text>
+<rect x="58" y="772" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="794" class="name"><tspan x="72" dy="0">Pandoc</tspan></text>
+<text x="550" y="794" class="meta"><tspan x="550" dy="0">executable</tspan></text>
+<rect x="800" y="672" width="720" height="152" rx="16" class="panel"/>
+<text x="820" y="706" class="head"><tspan x="820" dy="0">Extensibility</tspan></text>
+<rect x="818" y="730" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="752" class="name"><tspan x="832" dy="0">Lua</tspan></text>
+<text x="1310" y="752" class="meta"><tspan x="1310" dy="0">language</tspan></text>
+<rect x="1560" y="672" width="720" height="152" rx="16" class="panel"/>
+<text x="1580" y="706" class="head"><tspan x="1580" dy="0">Geospatial</tspan></text>
+<rect x="1578" y="730" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="752" class="name"><tspan x="1592" dy="0">GDAL</tspan></text>
+<text x="2070" y="752" class="meta"><tspan x="2070" dy="0">library</tspan></text>
+<rect x="40" y="900" width="720" height="152" rx="16" class="panel"/>
+<text x="60" y="934" class="head"><tspan x="60" dy="0">Hardware</tspan></text>
+<rect x="58" y="958" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="980" class="name"><tspan x="72" dy="0">Verilator</tspan></text>
+<text x="550" y="980" class="meta"><tspan x="550" dy="0">compiler</tspan></text>
+<rect x="800" y="900" width="720" height="152" rx="16" class="panel"/>
+<text x="820" y="934" class="head"><tspan x="820" dy="0">Mathematics</tspan></text>
+<rect x="818" y="958" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="980" class="name"><tspan x="832" dy="0">Wolfram Engine</tspan></text>
+<text x="1310" y="980" class="meta"><tspan x="1310" dy="0">runtime</tspan></text>
+<rect x="1560" y="900" width="720" height="152" rx="16" class="panel"/>
+<text x="1580" y="934" class="head"><tspan x="1580" dy="0">Media</tspan></text>
+<rect x="1578" y="958" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="980" class="name"><tspan x="1592" dy="0">FFmpeg</tspan></text>
+<text x="2070" y="980" class="meta"><tspan x="2070" dy="0">executable</tspan></text>
+<rect x="40" y="1086" width="720" height="152" rx="16" class="panel"/>
+<text x="60" y="1120" class="head"><tspan x="60" dy="0">Numerics</tspan></text>
+<rect x="58" y="1144" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="1166" class="name"><tspan x="72" dy="0">Julia / SciML / Symbolics</tspan></text>
+<text x="550" y="1166" class="meta"><tspan x="550" dy="0">platform</tspan></text>
+<rect x="800" y="1086" width="720" height="152" rx="16" class="panel"/>
+<text x="820" y="1120" class="head"><tspan x="820" dy="0">Policy</tspan></text>
+<rect x="818" y="1144" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="1166" class="name"><tspan x="832" dy="0">OPA / Rego</tspan></text>
+<text x="1310" y="1166" class="meta"><tspan x="1310" dy="0">dsl</tspan></text>
+<rect x="1560" y="1086" width="720" height="152" rx="16" class="panel"/>
+<text x="1580" y="1120" class="head"><tspan x="1580" dy="0">Programming Languages</tspan></text>
+<rect x="1578" y="1144" width="684" height="34" rx="10" class="chip"/>
+<text x="1592" y="1166" class="name"><tspan x="1592" dy="0">Racket / Redex</tspan></text>
+<text x="2070" y="1166" class="meta"><tspan x="2070" dy="0">library</tspan></text>
+<rect x="40" y="1272" width="720" height="152" rx="16" class="panel"/>
+<text x="60" y="1306" class="head"><tspan x="60" dy="0">Search</tspan></text>
+<rect x="58" y="1330" width="684" height="34" rx="10" class="chip"/>
+<text x="72" y="1352" class="name"><tspan x="72" dy="0">Apache Lucene</tspan></text>
+<text x="550" y="1352" class="meta"><tspan x="550" dy="0">library</tspan></text>
+<rect x="800" y="1272" width="720" height="278" rx="16" class="panel"/>
+<text x="820" y="1306" class="head"><tspan x="820" dy="0">Verification</tspan></text>
+<rect x="818" y="1330" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="1352" class="name"><tspan x="832" dy="0">Alloy</tspan></text>
+<text x="1310" y="1352" class="meta"><tspan x="1310" dy="0">model-checker</tspan></text>
+<rect x="818" y="1372" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="1394" class="name"><tspan x="832" dy="0">Dafny</tspan></text>
+<text x="1310" y="1394" class="meta"><tspan x="1310" dy="0">language</tspan></text>
+<rect x="818" y="1414" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="1436" class="name"><tspan x="832" dy="0">Lean 4</tspan></text>
+<text x="1310" y="1436" class="meta"><tspan x="1310" dy="0">prover</tspan></text>
+<rect x="818" y="1456" width="684" height="34" rx="10" class="chip"/>
+<text x="832" y="1478" class="name"><tspan x="832" dy="0">TLA+ / PlusCal / TLC</tspan></text>
+<text x="1310" y="1478" class="meta"><tspan x="1310" dy="0">model-checker</tspan></text>
+</svg>
