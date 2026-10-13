@@ -1,0 +1,337 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "name": "sample.docx",
+      "bytes": 36653,
+      "sha256": "a6b8c1ff014646e73422286465ff761f5511b57b9d43a44dfd42367156e2c282"
+    },
+    {
+      "name": "sample.epub",
+      "bytes": 1075,
+      "sha256": "19b6234033bbe375029aae2f3a4ac89e92ca337346dc54d90e5256cd058bb700"
+    },
+    {
+      "name": "sample.html",
+      "bytes": 109,
+      "sha256": "c8709e97f1cb075020223e0d9a37a7f3ffd34b9d96c97ac6c1cc53609cb756d4"
+    },
+    {
+      "name": "sample.pdf",
+      "bytes": 1408,
+      "sha256": "f4008640800c8a543b3dcbfc14af1339ee7f6edd4eb721dcd4ac10c4ce09a3dd"
+    },
+    {
+      "name": "sample.pptx",
+      "bytes": 28314,
+      "sha256": "10bc46e6678dbba9080a29e70bb90c174980c63cb00ce0b39ea737b9324dda18"
+    },
+    {
+      "name": "sample.rtf",
+      "bytes": 114,
+      "sha256": "3b92500d0c9e278cabfa5db378c9db9ad2cd6d9ecfdde04852d4ec78b20574fb"
+    },
+    {
+      "name": "sample.txt",
+      "bytes": 58,
+      "sha256": "f2147b09dc7a3d746c59bcd2c635eb0d6d1b751874309057e63824634b093340"
+    },
+    {
+      "name": "sample.xlsx",
+      "bytes": 4875,
+      "sha256": "6ecfc20d04da2d9365f2c78dc09315f116c391382857c6ce63d4e4969d0c399f"
+    },
+    {
+      "name": "sample.xml",
+      "bytes": 135,
+      "sha256": "53ba0ea8cb3d725a9c687940557475b12b5c9b3e571ec4f17d18a54dbc507606"
+    },
+    {
+      "name": "sample.zip",
+      "bytes": 178,
+      "sha256": "f053311faac2b7f3a45b5f36c7bd6ecb847270064b8d62e18ac9d13206b13ce4"
+    }
+  ],
+  "versions": {
+    "python": "3.13.16",
+    "java": "openjdk version \"21.0.12.1\" 2026-08-18 LTS",
+    "platform": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "tika": "Apache Tika 3.3.3",
+    "tika_jar_sha256": "f29d4e0d2cff1fc32396f6ac5ce436dfc7b19f9303d3b899e1f56fde85711c96",
+    "python_packages": {
+      "beautifulsoup4": "4.15.0",
+      "openpyxl": "3.1.5",
+      "pypdf": "6.20.1",
+      "python-docx": "1.2.0",
+      "python-pptx": "1.0.2",
+      "reportlab": "5.0.1",
+      "striprtf": "0.0.33"
+    }
+  },
+  "tika": {
+    "cold_seconds": 11.987045856999998,
+    "second_seconds": 10.911566140999994,
+    "cold": [
+      {
+        "file": "sample.docx",
+        "success": true,
+        "error": null,
+        "output_chars": 55
+      },
+      {
+        "file": "sample.epub",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.html",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.pdf",
+        "success": true,
+        "error": null,
+        "output_chars": 58
+      },
+      {
+        "file": "sample.pptx",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.rtf",
+        "success": true,
+        "error": null,
+        "output_chars": 55
+      },
+      {
+        "file": "sample.txt",
+        "success": true,
+        "error": null,
+        "output_chars": 57
+      },
+      {
+        "file": "sample.xlsx",
+        "success": true,
+        "error": null,
+        "output_chars": 65
+      },
+      {
+        "file": "sample.xml",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.zip",
+        "success": true,
+        "error": null,
+        "output_chars": 71
+      }
+    ],
+    "second": [
+      {
+        "file": "sample.docx",
+        "success": true,
+        "error": null,
+        "output_chars": 55
+      },
+      {
+        "file": "sample.epub",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.html",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.pdf",
+        "success": true,
+        "error": null,
+        "output_chars": 58
+      },
+      {
+        "file": "sample.pptx",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.rtf",
+        "success": true,
+        "error": null,
+        "output_chars": 55
+      },
+      {
+        "file": "sample.txt",
+        "success": true,
+        "error": null,
+        "output_chars": 57
+      },
+      {
+        "file": "sample.xlsx",
+        "success": true,
+        "error": null,
+        "output_chars": 65
+      },
+      {
+        "file": "sample.xml",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.zip",
+        "success": true,
+        "error": null,
+        "output_chars": 71
+      }
+    ],
+    "coverage": 10,
+    "source_metrics": {
+      "noncomment_source_lines": 13,
+      "format_dispatch_branches": 0
+    }
+  },
+  "python": {
+    "cold_seconds": 0.023221684999981562,
+    "second_seconds": 0.016628540999988672,
+    "cold": [
+      {
+        "file": "sample.docx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.epub",
+        "success": true,
+        "error": null,
+        "output_chars": 77
+      },
+      {
+        "file": "sample.html",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.pdf",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.pptx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.rtf",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.txt",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.xlsx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.xml",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.zip",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      }
+    ],
+    "second": [
+      {
+        "file": "sample.docx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.epub",
+        "success": true,
+        "error": null,
+        "output_chars": 77
+      },
+      {
+        "file": "sample.html",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.pdf",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.pptx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.rtf",
+        "success": true,
+        "error": null,
+        "output_chars": 54
+      },
+      {
+        "file": "sample.txt",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      },
+      {
+        "file": "sample.xlsx",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.xml",
+        "success": true,
+        "error": null,
+        "output_chars": 53
+      },
+      {
+        "file": "sample.zip",
+        "success": true,
+        "error": null,
+        "output_chars": 56
+      }
+    ],
+    "coverage": 10,
+    "source_metrics": {
+      "noncomment_source_lines": 60,
+      "format_dispatch_branches": 10
+    }
+  }
+}
