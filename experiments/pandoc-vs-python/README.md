@@ -98,7 +98,6 @@ Preserve:
 
 No conclusion should be written before raw results are produced.
 
-
 ## Results
 
 See:
@@ -106,5 +105,17 @@ See:
 - [conclusion](conclusion.md)
 - [captured versions](versions.txt)
 - [artifact hashes](SHA256SUMS)
+- [fixture provenance](fixture-provenance.json)
 
-The original DOCX fixture is preserved separately as chunked base64 because python-docx package metadata makes a naive regeneration byte-nondeterministic; the other five fixtures reproduce byte-for-byte from the generator.
+### DOCX reproducibility note
+
+The exact DOCX used in the measured run had SHA-256
+`02ac32e6d71814d8d6971f58af1584e13df6d130763a893bbccc43a796b51f35`.
+
+A naive second python-docx save produced a different archive hash solely because ZIP
+member timestamps changed. A member-by-member comparison found **zero content
+differences** across all DOCX package entries. The generator now canonicalizes ZIP
+member timestamps to `2020-01-01T00:00:00`, yielding reproducible SHA-256
+`a68fc81fc9105f5567994a8f436a177f5df8acadb67552fab579b164bd613f5b`
+on two independent reruns. This preserves the tested semantic fixture without
+maintaining opaque binary/base64 copies.
