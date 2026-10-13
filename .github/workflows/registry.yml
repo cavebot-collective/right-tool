@@ -5,8 +5,11 @@ on:
     paths:
       - "registry/**"
       - "docs/triage.*"
+      - "docs/atlas.html"
+      - "docs/*.svg"
       - "scripts/validate_registry.py"
       - "scripts/generate_triage.py"
+      - "scripts/generate_atlas.mjs"
       - "requirements-dev.txt"
       - ".github/workflows/registry.yml"
   push:
@@ -15,8 +18,11 @@ on:
     paths:
       - "registry/**"
       - "docs/triage.*"
+      - "docs/atlas.html"
+      - "docs/*.svg"
       - "scripts/validate_registry.py"
       - "scripts/generate_triage.py"
+      - "scripts/generate_atlas.mjs"
       - "requirements-dev.txt"
       - ".github/workflows/registry.yml"
 
@@ -31,4 +37,5 @@ jobs:
       - run: python -m pip install --disable-pip-version-check -r requirements-dev.txt
       - run: python scripts/validate_registry.py
       - run: python scripts/generate_triage.py
-      - run: git diff --exit-code -- docs/triage.mmd docs/triage.md
+      - run: node scripts/generate_atlas.mjs
+      - run: git diff --exit-code -- docs/triage.mmd docs/triage.md docs/atlas.html docs/triage.svg docs/capability-topology.svg docs/boundary-depth.svg
