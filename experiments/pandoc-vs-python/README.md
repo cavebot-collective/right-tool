@@ -1,6 +1,6 @@
 # Pandoc vs Python structured-document conversion bake-off
 
-Status: **preregistered; results not yet run**
+Status: **completed — mixed result; preregistered strengthening threshold not met**
 
 ## Question
 
@@ -97,3 +97,14 @@ Preserve:
 - captured tool/runtime versions
 
 No conclusion should be written before raw results are produced.
+
+
+## Results
+
+See:
+- [raw results](results.json)
+- [conclusion](conclusion.md)
+- [captured versions](versions.txt)
+- [artifact hashes](SHA256SUMS)
+
+The original DOCX fixture is preserved separately as chunked base64 because python-docx package metadata makes a naive regeneration byte-nondeterministic; the other five fixtures reproduce byte-for-byte from the generator.
