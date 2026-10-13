@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "measured_fixture": {
+    "name": "sample.docx",
+    "bytes": 36715,
+    "sha256": "02ac32e6d71814d8d6971f58af1584e13df6d130763a893bbccc43a796b51f35",
+    "used_in_results": true
+  },
+  "canonical_reproduction": {
+    "generator": "generate_fixtures.py",
+    "sha256": "a68fc81fc9105f5567994a8f436a177f5df8acadb67552fab579b164bd613f5b",
+    "reruns_verified_identical": 2,
+    "zip_member_timestamp": "2020-01-01T00:00:00"
+  },
+  "comparison": {
+    "zip_member_content_differences": 0,
+    "explanation": "The naive python-docx rerun differed only in ZIP member timestamps; every DOCX package member payload was byte-identical to the measured fixture."
+  }
+}
