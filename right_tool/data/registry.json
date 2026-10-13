@@ -1125,6 +1125,17 @@
       "last_checked_on": "2026-10-13",
       "review_after_days": 365,
       "notes": "Both stacks recovered 6/6 formats. Pandoc used 8 non-comment integration lines and 0 format-dispatch branches versus Python's 71 lines and 7 branches, but one-process-per-file Pandoc was about 20.36x slower on the tiny second-run corpus. The preregistered strengthening threshold was therefore not met."
+    },
+    {
+      "id": "empirical.jq-python-json-pipeline-2026-10-13",
+      "kind": "empirical",
+      "title": "jq vs Python JSON-pipeline reshaping bake-off",
+      "source": "experiments/jq-vs-python/results.json",
+      "observed_on": "2026-10-13",
+      "status": "current",
+      "last_checked_on": "2026-10-13",
+      "review_after_days": 365,
+      "notes": "Both implementations produced byte-identical normalized output on small and large datasets. jq used 26 non-comment lines vs Python 36, missing the preregistered <=60% source-size threshold. Process-level runtime passed, but normal Python startup in this environment was dominated by /opt/python-hooks/sitecustomize.py; a post-preregistered python -S diagnostic showed Python materially faster on the large in-memory transform."
     }
   ],
   "recommendations": [
@@ -1460,7 +1471,8 @@
       "advantage": "The representation matches the problem directly and crossing cost is effectively zero in pipeline-oriented JSON work.",
       "avoid_when": [
         "The transformation needs substantial application state, I/O orchestration, or domain behavior.",
-        "The team cannot accept a separate command-line dependency."
+        "The team cannot accept a separate command-line dependency.",
+        "Large in-memory transformations where host-language execution stays in-process and performance or richer application logic dominates; jq's declarative concision may be modest rather than dramatic."
       ],
       "closest_alternatives": [
         {
@@ -1470,7 +1482,8 @@
       ],
       "boundary": {
         "kind": "file-cli",
-        "interface": "stdin/stdout"
+        "interface": "stdin/stdout",
+        "notes": "The CLI boundary is especially cheap for shell/pipeline JSON surgery. For larger in-memory transforms, benchmark against the host language after amortizing runtime startup; the empirical bake-off produced a mixed result."
       },
       "crossing_cost": {
         "learning": "low",
@@ -1480,10 +1493,14 @@
       },
       "confidence": "high",
       "evidence_ids": [
-        "research.crossing-cost-atlas"
+        "research.crossing-cost-atlas",
+        "empirical.jq-python-json-pipeline-2026-10-13"
       ],
       "example": "Select, reshape, group, and join JSON emitted by another command without creating a throwaway application.",
-      "status": "current"
+      "status": "current",
+      "experiment_ids": [
+        "exp.jq-python-json-pipeline"
+      ]
     },
     {
       "id": "rec.opa.shared-policy",
@@ -2101,6 +2118,21 @@
       ],
       "status": "completed",
       "notes": "Mixed result: both stacks recovered 6/6 formats; Pandoc used 8 integration lines / 0 dispatch branches vs Python 71 / 7, but Pandoc was ~20.36x slower on the tiny second-run corpus. Preregistered strengthening threshold not met; weakening threshold also not met."
+    },
+    {
+      "id": "exp.jq-python-json-pipeline",
+      "title": "jq vs Python JSON-pipeline reshaping bake-off",
+      "hypothesis": "jq will express a representative JSON filter/group/join pipeline substantially more compactly than Python while remaining operationally plausible.",
+      "success_criteria": [
+        "Exact normalized output equality on small and large datasets",
+        "jq uses <= 60% of Python's non-comment transformation source lines",
+        "jq median runtime is <= 2x Python small and <= 5x Python large"
+      ],
+      "system_ids": [
+        "jq"
+      ],
+      "status": "completed",
+      "notes": "Mixed result: correctness passed; jq used 26 lines vs Python 36 (~72.2%), so the source-size threshold failed. Preregistered process timings passed, but the container's normal Python startup was dominated by sitecustomize; a diagnostic with python -S showed jq ~0.82x Python on small and ~5.19x Python on large. Confidence unchanged; added a large/in-process workload discriminator."
     }
   ]
 }
