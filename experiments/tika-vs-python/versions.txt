@@ -1,0 +1,5 @@
+Apache Tika 3.3.3
+openjdk version "21.0.12.1" 2026-08-18 LTS
+Python 3.13.16
+Linux-6.17.0-1022-azure-x86_64-with-glibc2.39
+Tika JAR SHA256 f29d4e0d2cff1fc32396f6ac5ce436dfc7b19f9303d3b899e1f56fde85711c96
