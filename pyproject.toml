@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "right-tool-atlas"
+version = "0.1.0"
+description = "Capability-first lookup for specialist tools worth crossing ecosystem boundaries for"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "cavebot-collective"}]
+dependencies = []
+
+[project.scripts]
+right-tool = "right_tool.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["right_tool*"]
+
+[tool.setuptools.package-data]
+right_tool = ["data/*.json"]
