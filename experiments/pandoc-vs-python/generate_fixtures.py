@@ -30,6 +30,23 @@ for item in ITEMS:
     doc.add_paragraph(item, style='List Bullet')
 doc.save(FIX/'sample.docx')
 
+# python-docx writes current ZIP member timestamps. Canonicalize them so the
+# generated DOCX is byte-reproducible while preserving every member's content.
+from zipfile import ZipInfo
+docx = FIX/'sample.docx'
+tmp = FIX/'sample.docx.tmp'
+with ZipFile(docx, 'r') as src, ZipFile(tmp, 'w') as dst:
+    for info in src.infolist():
+        data = src.read(info.filename)
+        z = ZipInfo(info.filename, (2020,1,1,0,0,0))
+        z.compress_type = info.compress_type
+        z.external_attr = info.external_attr
+        z.internal_attr = info.internal_attr
+        z.create_system = info.create_system
+        z.flag_bits = info.flag_bits
+        dst.writestr(z, data)
+tmp.replace(docx)
+
 # Minimal deterministic EPUB. ZIP timestamps are fixed for byte reproducibility.
 FIXED=(2020,1,1,0,0,0)
 def zi(name, compress=ZIP_DEFLATED):
