@@ -239,7 +239,10 @@
         "kind",
         "title",
         "source",
-        "observed_on"
+        "observed_on",
+        "status",
+        "last_checked_on",
+        "review_after_days"
       ],
       "properties": {
         "id": {
@@ -267,6 +270,30 @@
         },
         "notes": {
           "type": "string"
+        },
+        "status": {
+          "enum": [
+            "current",
+            "stale",
+            "disputed",
+            "superseded"
+          ]
+        },
+        "last_checked_on": {
+          "type": "string",
+          "format": "date"
+        },
+        "review_after_days": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 3650
+        },
+        "superseded_by": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/id"
+            }
+          ]
         }
       }
     },
@@ -353,7 +380,8 @@
         "crossing_cost",
         "confidence",
         "evidence_ids",
-        "example"
+        "example",
+        "status"
       ],
       "properties": {
         "id": {
@@ -412,6 +440,14 @@
           "items": {
             "$ref": "#/$defs/id"
           }
+        },
+        "status": {
+          "enum": [
+            "current",
+            "provisional",
+            "disputed",
+            "retired"
+          ]
         }
       }
     },

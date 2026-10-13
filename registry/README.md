@@ -54,3 +54,7 @@ python scripts/validate_registry.py
 ```
 
 CI runs the same validation for registry-related changes.
+
+## Evidence lifecycle
+
+Claim and evidence maintenance rules are defined in [../docs/evidence-policy.md](../docs/evidence-policy.md). Use `python scripts/audit_evidence.py` for structural/freshness reporting; the monthly workflow runs the strict stale-evidence check.

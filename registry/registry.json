@@ -1100,14 +1100,20 @@
       "kind": "research",
       "title": "Crossing-Cost Advantage Atlas: Where Specialist Ecosystems Actually Earn the Boundary",
       "source": "research/2026-09-25-crossing-cost-advantage-atlas.md",
-      "observed_on": "2026-09-25"
+      "observed_on": "2026-09-25",
+      "status": "current",
+      "last_checked_on": "2026-09-25",
+      "review_after_days": 180
     },
     {
       "id": "research.language-override-atlas",
       "kind": "research",
       "title": "Programming-Language Ecosystem Override Atlas",
       "source": "research/2026-09-25-programming-language-ecosystem-override-atlas.md",
-      "observed_on": "2026-09-25"
+      "observed_on": "2026-09-25",
+      "status": "current",
+      "last_checked_on": "2026-09-25",
+      "review_after_days": 180
     }
   ],
   "recommendations": [
@@ -1146,7 +1152,8 @@
       "example": "Normalize a corpus containing PDFs, Office files, email containers, EPUB, archives, and metadata-heavy binaries into searchable text/metadata.",
       "experiment_ids": [
         "exp.hostile-document-corpus"
-      ]
+      ],
+      "status": "current"
     },
     {
       "id": "rec.souffle.fixed-point",
@@ -1185,7 +1192,8 @@
       "example": "Express whole-program reachability or taint propagation as recursive relations instead of queues, visited sets, and convergence loops.",
       "experiment_ids": [
         "exp.fixed-point-bakeoff"
-      ]
+      ],
+      "status": "current"
     },
     {
       "id": "rec.roslyn.csharp-semantics",
@@ -1219,7 +1227,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Refactor symbol usages correctly across aliases, generics, overloads, inferred types, and partial classes."
+      "example": "Refactor symbol usages correctly across aliases, generics, overloads, inferred types, and partial classes.",
+      "status": "current"
     },
     {
       "id": "rec.tree-sitter.incremental-syntax",
@@ -1251,7 +1260,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Maintain syntax trees for a multi-language editor while users are halfway through typing invalid code."
+      "example": "Maintain syntax trees for a multi-language editor while users are halfway through typing invalid code.",
+      "status": "current"
     },
     {
       "id": "rec.cue.config-constraints",
@@ -1286,7 +1296,8 @@
       "example": "Replace YAML overlays plus defaults plus schema validation plus bespoke cross-field checks with a single constrained configuration model.",
       "experiment_ids": [
         "exp.config-stack-bakeoff"
-      ]
+      ],
+      "status": "current"
     },
     {
       "id": "rec.pandoc.format-conversion",
@@ -1321,7 +1332,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Convert Markdown, reStructuredText, LaTeX, HTML, DOCX, or EPUB through one maintained conversion engine."
+      "example": "Convert Markdown, reStructuredText, LaTeX, HTML, DOCX, or EPUB through one maintained conversion engine.",
+      "status": "current"
     },
     {
       "id": "rec.lucene.embedded-fulltext",
@@ -1354,7 +1366,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Add local faceted full-text and vector search over a corpus without operating Elasticsearch/OpenSearch."
+      "example": "Add local faceted full-text and vector search over a corpus without operating Elasticsearch/OpenSearch.",
+      "status": "current"
     },
     {
       "id": "rec.ffmpeg.media",
@@ -1387,7 +1400,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Probe, transcode, trim, resample, filter, and remux heterogeneous audio/video without integrating individual codecs."
+      "example": "Probe, transcode, trim, resample, filter, and remux heterogeneous audio/video without integrating individual codecs.",
+      "status": "current"
     },
     {
       "id": "rec.gdal.geo",
@@ -1419,7 +1433,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Reproject and convert mixed raster/vector datasets across CRS and file formats without implementing geodesy/format adapters."
+      "example": "Reproject and convert mixed raster/vector datasets across CRS and file formats without implementing geodesy/format adapters.",
+      "status": "current"
     },
     {
       "id": "rec.jq.json",
@@ -1451,7 +1466,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Select, reshape, group, and join JSON emitted by another command without creating a throwaway application."
+      "example": "Select, reshape, group, and join JSON emitted by another command without creating a throwaway application.",
+      "status": "current"
     },
     {
       "id": "rec.opa.shared-policy",
@@ -1483,7 +1499,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Apply the same admission/authorization policy to services written in several different implementation languages."
+      "example": "Apply the same admission/authorization policy to services written in several different implementation languages.",
+      "status": "current"
     },
     {
       "id": "rec.redex.semantics",
@@ -1516,7 +1533,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Define a reduction calculus, evaluation contexts, and metafunctions and generate/test terms directly from that semantics."
+      "example": "Define a reduction calculus, evaluation contexts, and metafunctions and generate/test terms directly from that semantics.",
+      "status": "current"
     },
     {
       "id": "rec.z3.smt",
@@ -1549,7 +1567,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Solve bit-vector and array constraints for a protocol or symbolic execution subproblem instead of writing bespoke enumeration."
+      "example": "Solve bit-vector and array constraints for a protocol or symbolic execution subproblem instead of writing bespoke enumeration.",
+      "status": "current"
     },
     {
       "id": "rec.cvc5.smt",
@@ -1582,7 +1601,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Differentially check SMT-dependent tooling against a second solver rather than trusting one implementation."
+      "example": "Differentially check SMT-dependent tooling against a second solver rather than trusting one implementation.",
+      "status": "current"
     },
     {
       "id": "rec.minizinc.cp",
@@ -1614,7 +1634,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Model scheduling/resource allocation once and compare multiple back-end solvers without rewriting the model."
+      "example": "Model scheduling/resource allocation once and compare multiple back-end solvers without rewriting the model.",
+      "status": "current"
     },
     {
       "id": "rec.clingo.asp",
@@ -1647,7 +1668,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Choose a consistent set of actions/configurations under defaults, exclusions, and global combinatorial rules."
+      "example": "Choose a consistent set of actions/configurations under defaults, exclusions, and global combinatorial rules.",
+      "status": "current"
     },
     {
       "id": "rec.prolog.relational",
@@ -1681,7 +1703,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Solve a relational puzzle or structural search where any argument may be unknown and constraints should propagate both directions."
+      "example": "Solve a relational puzzle or structural search where any argument may be unknown and constraints should propagate both directions.",
+      "status": "current"
     },
     {
       "id": "rec.tla.concurrent",
@@ -1714,7 +1737,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Explore retries, duplicate messages, failover, and leader transitions across all bounded interleavings."
+      "example": "Explore retries, duplicate messages, failover, and leader transitions across all bounded interleavings.",
+      "status": "current"
     },
     {
       "id": "rec.alloy.relational",
@@ -1747,7 +1771,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Find a minimal ownership/membership graph that violates an apparently plausible schema invariant."
+      "example": "Find a minimal ownership/membership graph that violates an apparently plausible schema invariant.",
+      "status": "current"
     },
     {
       "id": "rec.dafny.contracts",
@@ -1780,7 +1805,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Implement a critical algorithm with pre/postconditions and loop invariants, then compile the verified component for use elsewhere."
+      "example": "Implement a critical algorithm with pre/postconditions and loop invariants, then compile the verified component for use elsewhere.",
+      "status": "current"
     },
     {
       "id": "rec.lean.proof",
@@ -1812,7 +1838,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Prove a mathematical property or algorithmic invariant that must survive independent kernel checking."
+      "example": "Prove a mathematical property or algorithmic invariant that must survive independent kernel checking.",
+      "status": "current"
     },
     {
       "id": "rec.julia.compositional-numerics",
@@ -1848,7 +1875,8 @@
       "example": "Propagate units, dual numbers, arbitrary precision, or symbolic values through an ODE solver and optimization pipeline.",
       "experiment_ids": [
         "exp.julia-composition-bakeoff"
-      ]
+      ],
+      "status": "current"
     },
     {
       "id": "rec.wolfram.symbolic",
@@ -1882,7 +1910,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Generate exact reference answers for differential/property tests of a numerical implementation."
+      "example": "Generate exact reference answers for differential/property tests of a numerical implementation.",
+      "status": "current"
     },
     {
       "id": "rec.nix.reproducible",
@@ -1914,7 +1943,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Pin compiler, native libraries, code generators, and tools into a reproducible development/build closure."
+      "example": "Pin compiler, native libraries, code generators, and tools into a reproducible development/build closure.",
+      "status": "current"
     },
     {
       "id": "rec.lua.embedding",
@@ -1947,7 +1977,8 @@
         "research.crossing-cost-atlas",
         "research.language-override-atlas"
       ],
-      "example": "Expose host functions and domain objects to user scripts without creating and maintaining a custom expression language."
+      "example": "Expose host functions and domain objects to user scripts without creating and maintaining a custom expression language.",
+      "status": "current"
     },
     {
       "id": "rec.verilator.rtl",
@@ -1979,7 +2010,8 @@
       "evidence_ids": [
         "research.crossing-cost-atlas"
       ],
-      "example": "Compile a SystemVerilog design into a native test target and subject it to property/fuzz/differential testing."
+      "example": "Compile a SystemVerilog design into a native test target and subject it to property/fuzz/differential testing.",
+      "status": "current"
     }
   ],
   "experiments": [
