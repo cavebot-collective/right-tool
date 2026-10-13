@@ -20,3 +20,16 @@ Examples include FFmpeg for media, Tika for heterogeneous documents, Soufflé fo
   - [Programming-language ecosystem override atlas](research/2026-09-25-programming-language-ecosystem-override-atlas.md)
 
 GitHub issues are the active work queue. The registry and generated visualizations will remain source-controlled so the research, decision rules, UI, and CLI share one canonical substrate.
+
+## CLI
+
+The deterministic CLI consumes the same canonical registry as the visual atlas.
+
+```sh
+python -m pip install -e .
+right-tool find "worklist propagation until convergence"
+right-tool find "heterogeneous office pdf email extraction" --json
+right-tool show souffle
+```
+
+Set `RIGHT_TOOL_REGISTRY` or pass `--registry PATH` to use another compatible registry file.
