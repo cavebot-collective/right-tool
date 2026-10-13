@@ -1114,6 +1114,17 @@
       "status": "current",
       "last_checked_on": "2026-09-25",
       "review_after_days": 180
+    },
+    {
+      "id": "empirical.pandoc-python-conversion-2026-10-13",
+      "kind": "empirical",
+      "title": "Pandoc vs Python structured-document conversion bake-off",
+      "source": "experiments/pandoc-vs-python/results.json",
+      "observed_on": "2026-10-13",
+      "status": "current",
+      "last_checked_on": "2026-10-13",
+      "review_after_days": 365,
+      "notes": "Both stacks recovered 6/6 formats. Pandoc used 8 non-comment integration lines and 0 format-dispatch branches versus Python's 71 lines and 7 branches, but one-process-per-file Pandoc was about 20.36x slower on the tiny second-run corpus. The preregistered strengthening threshold was therefore not met."
     }
   ],
   "recommendations": [
@@ -1307,7 +1318,8 @@
       "advantage": "Normalizes many structured document dialects through a common document AST, avoiding a matrix of pairwise converters.",
       "avoid_when": [
         "Required conversion fidelity is outside Pandoc's supported semantics.",
-        "The problem is extraction from arbitrary binary formats rather than structured conversion."
+        "The problem is extraction from arbitrary binary formats rather than structured conversion.",
+        "Many tiny latency-sensitive conversions where one Pandoc process per file dominates runtime; batch or amortize process startup, or keep simple conversion in-process."
       ],
       "closest_alternatives": [
         {
@@ -1319,7 +1331,7 @@
       "boundary": {
         "kind": "file-cli",
         "interface": "pandoc executable with files/stdin/stdout",
-        "notes": "This is usually not a reason to adopt Haskell."
+        "notes": "Usually call the executable rather than adopting Haskell. For many tiny latency-sensitive files, batch or amortize process startup; the empirical bake-off found about a 20.36x second-run penalty under one-process-per-file on six tiny fixtures."
       },
       "crossing_cost": {
         "learning": "low",
@@ -1330,10 +1342,14 @@
       "confidence": "high",
       "evidence_ids": [
         "research.crossing-cost-atlas",
-        "research.language-override-atlas"
+        "research.language-override-atlas",
+        "empirical.pandoc-python-conversion-2026-10-13"
       ],
       "example": "Convert Markdown, reStructuredText, LaTeX, HTML, DOCX, or EPUB through one maintained conversion engine.",
-      "status": "current"
+      "status": "current",
+      "experiment_ids": [
+        "exp.pandoc-python-structured-conversion"
+      ]
     },
     {
       "id": "rec.lucene.embedded-fulltext",
@@ -2070,6 +2086,21 @@
         "julia-sciml"
       ],
       "status": "proposed"
+    },
+    {
+      "id": "exp.pandoc-python-structured-conversion",
+      "title": "Pandoc vs Python structured-document conversion bake-off",
+      "hypothesis": "Pandoc will match or exceed a Python host-language conversion stack's format coverage while requiring substantially less format-specific integration code.",
+      "success_criteria": [
+        "Pandoc matches or exceeds Python baseline coverage",
+        "Pandoc uses <= 50% of Python's format-specific integration lines or eliminates per-format parser dispatch",
+        "Pandoc second-run full-corpus time is < 10x the Python baseline"
+      ],
+      "system_ids": [
+        "pandoc"
+      ],
+      "status": "completed",
+      "notes": "Mixed result: both stacks recovered 6/6 formats; Pandoc used 8 integration lines / 0 dispatch branches vs Python 71 / 7, but Pandoc was ~20.36x slower on the tiny second-run corpus. Preregistered strengthening threshold not met; weakening threshold also not met."
     }
   ]
 }
