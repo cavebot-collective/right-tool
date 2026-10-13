@@ -1,6 +1,6 @@
 # Tika vs Python extraction bake-off — blocked
 
-Status: **preregistered, not executed**
+Status: **local container blocked; GitHub Actions execution path added, result pending**
 
 The experiment in this directory remains valid and intentionally has **no empirical conclusion** yet.
 
@@ -21,3 +21,9 @@ The preregistration uses Apache Tika **3.3.3** deliberately because the supporte
 Resume only when a verified Tika 3.3.3 application artifact is available locally or can be supplied to the experiment environment.
 
 Do **not** treat this blocker as evidence for or against the Tika crossing-cost claim. The success criteria remain frozen in the preregistration.
+
+## CI execution path
+
+The local-container blocker is being bypassed with a same-repository GitHub Actions runner that downloads the pinned Tika 3.3.3 JAR and executes the frozen preregistration unchanged.
+
+This changes only the execution environment. It is **not** an empirical conclusion.
