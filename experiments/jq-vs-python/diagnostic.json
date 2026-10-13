@@ -1,0 +1,19 @@
+{
+  "kind": "post-preregistered-diagnostic",
+  "reason": "Normal Python startup in this container was ~1-1.6s because /opt/python-hooks/sitecustomize.py is loaded; diagnostic separates environment startup from transform cost without changing preregistered pass/fail.",
+  "python_sitecustomize": "/opt/python-hooks/sitecustomize.py",
+  "python_noop_normal_observed_seconds": [1.32, 1.61, 1.03],
+  "python_noop_minus_S_observed_seconds": [0.01, 0.00, 0.01],
+  "python_minus_S_medians_seconds": {
+    "small": 0.02625641400004497,
+    "large": 0.19092068999998446
+  },
+  "jq_preregistered_medians_seconds": {
+    "small": 0.02158132299996396,
+    "large": 0.9900030669999751
+  },
+  "jq_over_python_minus_S_ratio": {
+    "small": 0.8219562166866926,
+    "large": 5.185419394541959
+  }
+}
