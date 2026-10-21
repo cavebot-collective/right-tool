@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "project_id": "cavebot-collective/right-tool",
+  "visual": {
+    "kind": "registry_inventory",
+    "title": "Registry inventory",
+    "description": "Source registry entries; counts do not establish completeness, performance, or architectural structure.",
+    "metrics": [
+      {
+        "id": "systems",
+        "label": "Systems",
+        "value": 26
+      },
+      {
+        "id": "triggers",
+        "label": "Triggers",
+        "value": 25
+      },
+      {
+        "id": "recommendations",
+        "label": "Recommendations",
+        "value": 26
+      },
+      {
+        "id": "families",
+        "label": "Problem families",
+        "value": 17
+      }
+    ]
+  },
+  "evidence": {
+    "status": "observed",
+    "source_path": "registry/registry.json",
+    "source_git_blob_sha": "a9827a9444adea864027e9c8acf6300dab983f4e",
+    "derived_by": "scripts/export_gallery.mjs"
+  }
+}
