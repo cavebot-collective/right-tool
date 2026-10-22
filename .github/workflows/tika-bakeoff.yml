@@ -1,0 +1,47 @@
+name: tika-bakeoff
+
+on:
+  pull_request:
+    paths:
+      - "experiments/tika-vs-python/**"
+      - ".github/workflows/tika-bakeoff.yml"
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+      - name: Install Python baseline dependencies
+        run: python -m pip install --disable-pip-version-check -r experiments/tika-vs-python/requirements.txt
+      - name: Download pinned Tika 3.3.3 app
+        working-directory: experiments/tika-vs-python
+        run: |
+          curl -fL --retry 5 --retry-delay 2             https://repo1.maven.org/maven2/org/apache/tika/tika-app/3.3.3/tika-app-3.3.3.jar             -o tika-app-3.3.3.jar
+          sha256sum tika-app-3.3.3.jar
+          java -jar tika-app-3.3.3.jar --version
+      - name: Generate corpus and run frozen bake-off
+        working-directory: experiments/tika-vs-python
+        env:
+          TIKA_JAR: tika-app-3.3.3.jar
+        run: |
+          python generate_fixtures.py
+          python run_bakeoff.py | tee run-output.txt
+          python -m pip freeze > pip-freeze.txt
+          cat results.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: tika-bakeoff-results
+          path: |
+            experiments/tika-vs-python/results.json
+            experiments/tika-vs-python/run-output.txt
+            experiments/tika-vs-python/pip-freeze.txt
+            experiments/tika-vs-python/fixtures/**
+            experiments/tika-vs-python/out/**
+          if-no-files-found: error

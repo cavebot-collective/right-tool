@@ -1,0 +1,7 @@
+beautifulsoup4
+openpyxl
+pypdf
+python-docx
+python-pptx
+reportlab
+striprtf
